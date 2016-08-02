@@ -3,6 +3,15 @@
   font-weight: 100;
   font-style: normal;
   font-family: 'verlag';
+  src: url('fonts/verlag-xlight-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/verlag-xlight-webfont.woff') format('woff'),
+  url('fonts/verlag-xlight-webfont.ttf') format('truetype'),
+  url('fonts/verlag-xlight-webfont.svg') format('svg');
+}
+@font-face {
+  font-weight: 200;
+  font-style: normal;
+  font-family: 'verlag';
   src: url('fonts/verlag-light-webfont.eot?#iefix') format('embedded-opentype'),
   url('fonts/verlag-light-webfont.woff') format('woff'),
   url('fonts/verlag-light-webfont.ttf') format('truetype'),
@@ -84,7 +93,7 @@ body {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'verlag', Arial;
-  font-weight: 100;
+  font-weight: 200;
   color: rgb(135,150,140);
   padding: 15px 0;
   margin: 0;
@@ -135,9 +144,9 @@ p, div {
   color: #6b6b6b;
   padding: 0;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 200;
   margin: 1rem 0;
-  line-height: 1.6rem;
+  line-height: 1.4rem;
 }
 
 .container-fluid:first-child {
@@ -168,7 +177,7 @@ blockquote {
 }
 hr {
   border: 0;
-  border-bottom: solid 1px #6b6b6b;
+  border-bottom: solid 1px rgba(130,130,130,0.3);
 }
 strong, b {
   font-weight: 500;
@@ -274,8 +283,8 @@ footer a {
   margin-top: 3rem;
   margin-bottom: 2rem;
   font-size: 0.6rem;
-  font-weight: 200;
-  line-height: 1rem;
+  font-weight: 100;
+  line-height: 0.8rem;
 }
 footer .clearfix {
   padding : 0;
@@ -341,7 +350,7 @@ footer ul li:first-child:after  {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.3)), url('images/image4.jpg');
+  background-image: url('images/image4.jpg');
 }
 /* page body columns */
 .columns {
