@@ -145,10 +145,12 @@ p, div {
   padding: 0;
   text-decoration: none;
   font-weight: 200;
-  margin: 0 0 1rem 0;
+  margin: 0;
   line-height: 1.4rem;
 }
-
+p {
+  margin: 0 0 1rem 0;
+}
 .container-fluid:first-child {
   margin-top: 0;
 }
@@ -348,11 +350,12 @@ a .box {
   padding: 4rem;
   width: 100%;
   background: rgba(255,255,255,0.66);
-  position: absolute;
-  bottom: 0;
-  left: 0;
   font-weight: 300;
 }
+.tagline + .container-fluid .row {
+
+}
+
 .banner {
   padding: 0;
   margin: 0;
@@ -369,6 +372,7 @@ a .box {
   min-height: 80vh;
 }
 .down {
+  opacity: 0.8;
   width: 50px;
   position: absolute;
   bottom: 3rem;
@@ -525,6 +529,14 @@ input[type="checkbox"], input[type="radio"] {
 .padout {
   padding: 2rem;
 }
+/* Responsive tweaks */
+@media (max-width: 992px) {
+.box {
+  height: 70vw;
+  min-height: 70vw;
+}
+}
+
 /* GRID LAYOUT SYSTEM */
 .container {
   padding-right: 2rem;
