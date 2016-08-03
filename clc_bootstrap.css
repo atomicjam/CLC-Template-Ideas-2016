@@ -67,7 +67,7 @@ html {
 body {
   background-color: #fff;
   font-family: 'verlag', Arial;
-  color: #6b6b6b;
+  color: rgb(130,130,130);
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -88,7 +88,7 @@ body {
   background: rgb(50,50,50);
 }
 .secondarycolour * {
-  color: l;
+  color: rgb(130,130,130);
 }
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -141,7 +141,7 @@ h6 {
 p, div {
   font-family: 'verlag', Arial;
   font-size: 1rem;
-  color: #6b6b6b;
+  color: rgb(130,130,130);
   padding: 0;
   text-decoration: none;
   font-weight: 200;
@@ -157,7 +157,7 @@ section {
 }
 abbr {
   position: relative;
-  border-bottom: 1px dotted #6b6b6b;
+  border-bottom: 1px dotted rgb(130,130,130);
   cursor: pointer;
 }
 abbr:hover::after {
@@ -197,7 +197,7 @@ table {
 }
 table tr {
   border: 0;
-  border-bottom: 1px solid #6b6b6b;
+  border-bottom: 1px solid rgb(130,130,130);
 }
 table td, table th {
   padding: 0.2rem 0.5rem;
@@ -216,7 +216,7 @@ code {
 code {
   padding: 2px 6px;
   font-size: 90%;
-  color: #758e88;
+  color: rgb(115,130,120);
   background-color: #f9f2f4;
   border-radius: 4px;
 }
@@ -229,7 +229,7 @@ code {
 a {
   font-family: 'verlag', Arial;
   font-size: 0.9rem;
-  color:#758e88;
+  color: rgb(115,130,120);
   text-transform: uppercase;
   padding: 0;
   text-decoration: none;
