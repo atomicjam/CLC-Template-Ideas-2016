@@ -347,7 +347,7 @@ a .box {
 }
 /* banner images */
 .tagline {
-  padding: 4rem;
+  padding: 5rem 3rem;
   width: 100%;
   background: rgba(255,255,255,0.66);
   font-weight: 300;
@@ -531,12 +531,11 @@ input[type="checkbox"], input[type="radio"] {
 }
 /* Responsive tweaks */
 @media (max-width: 992px) {
-.box {
-  height: 70vw;
-  min-height: 70vw;
+  .box {
+    height: 70vw;
+    min-height: 70vw;
+  }
 }
-}
-
 /* GRID LAYOUT SYSTEM */
 .container {
   padding-right: 2rem;
