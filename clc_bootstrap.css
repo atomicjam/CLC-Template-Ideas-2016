@@ -62,7 +62,7 @@ html {
   margin: 0;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-variant-numeric: tabular-nums;
+  font-variant-numeric:;
 }
 body {
   background-color: #fff;
@@ -324,6 +324,8 @@ footer ul li:first-child:after  {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 .box blockquote {
   padding: 0;
@@ -338,7 +340,19 @@ footer ul li:first-child:after  {
 .imagebox * {
   color: white;
 }
+a .box {
+  text-transform: none;
+}
 /* banner images */
+.tagline {
+  padding: 4rem;
+  width: 100%;
+  background: rgba(255,255,255,0.66);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 300;
+}
 .banner {
   padding: 0;
   margin: 0;
@@ -348,6 +362,11 @@ footer ul li:first-child:after  {
   background-size: cover;
   background-position: center;
   background-image: url('images/image4.jpg');
+}
+.short {
+  position: relative;
+  height: 80vh;
+  min-height: 80vh;
 }
 .down {
   width: 50px;
