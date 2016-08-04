@@ -354,12 +354,12 @@ footer ul li:first-child:after  {
   background-size: cover;
   background-position: right;
   background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.3)), url('images/stock/image1.jpg');
-  transition: all 1.5s ease-out;
+  transition: all 2s ease-out;
   transform: scale(1);
   color: white;
 }
 .imagebox-zoom:hover {
-  transform: scale(1.03) rotateZ(1deg);
+  transform: scale(1.04) rotateZ(1deg);
 }
 .boxlink-zoom {
   position: absolute;
