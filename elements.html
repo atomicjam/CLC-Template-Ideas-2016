@@ -24,11 +24,9 @@
 				<li><a href="#lists">Lists</a></li>
 				<li><a href="#textmarkup">Text Markup</a></li>
 				<li><a href="#links">Links</a></li>
-				<li><a href="#forms">Forms</a></li>
 				<li><a href="#tables">Tables</a></li>
 				<li><a href="#characters">Character</a></li>
-				<li><a href="index.html">Splash Page Example</a></li>
-				<li><a href="page.html">Example Page Layout</a></li>
+				<li><a href="#forms">Forms</a></li>
 			</ul>
 		<h2 id="headings">Headings</h2>
 		<p>the following are assorted <code>H1 to H6</code> tags on coloured backgrounds</p>
@@ -185,6 +183,41 @@ items are short, lists look better if they are compactly presented,
 <p>This is a text paragraph that contains some inline links. Generally, inline links (as opposite to e.g. links
 lists) are problematic from the <a href="#">usability</a> perspective, but they may have use as
 &#8220;incidental&#8221;, less relevant links. See the document <a href="#">Links Want To Be Links</a>.</p>
+<h2 id="tables">Tables</h2>
+<p>The following table has a caption. The first row and the first column
+contain table header cells (<code>th</code> elements) only; other cells
+are data cells (<code>td</code> elements), with <code>align="right"</code>
+attributes:</p>
+<table summary="Each row names a Nordic country and specifies its total area and land area, in square kilometers">
+<caption>Sample table: Areas of the Nordic countries, in sq km</caption>
+<tr><th scope="col">Country</th><th scope="col">Total area</th><th scope="col">Land area</th></tr>
+<tr><th scope="row">Denmark</th><td>43,070</td><td>42,370</td></tr>
+<tr><th scope="row">Finland</th><td>337,030</td><td>305,470</td></tr>
+<tr><th scope="row">Iceland</th><td>103,000</td><td>100,250</td></tr>
+<tr><th scope="row">Norway</th><td>324,220</td><td>307,860</td></tr>
+<tr><th scope="row">Sweden</th><td>449,964</td><td>410,928</td></tr>
+</table>
+<table summary="Each row names a Nordic country and specifies its total area and land area, in square kilometers" class="fullwidth">
+<caption>Sample table: Areas of the Nordic countries, in sq km with <code>.fullwidth class</code> to overwrite max table width</caption>
+<tr><th scope="col">Country</th><th scope="col">Total area</th><th scope="col">Land area</th></tr>
+<tr><th scope="row">Denmark</th><td>43,070</td><td>42,370</td></tr>
+<tr><th scope="row">Finland</th><td>337,030</td><td>305,470</td></tr>
+<tr><th scope="row">Iceland</th><td>103,000</td><td>100,250</td></tr>
+<tr><th scope="row">Norway</th><td>324,220</td><td>307,860</td></tr>
+<tr><th scope="row">Sweden</th><td>449,964</td><td>410,928</td></tr>
+</table>
+<h2 id="characters">Character</h2>
+<p>The following table has some sample characters with annotations. If the browser&#8217;s default font does not contain all of them, they may get displayed using backup fonts. This may cause stylistic differences, but it should not prevent the characters from being displayed at all.</p>
+<table>
+<tr><th>Char.</th><th>Explanation</th><th>Notes</th></tr>
+<tr><td>�</td> <td>e with circumflex</td><td>Latin 1 character, should be ok</td></tr>
+<tr><td>&#8212;</td> <td>em dash</td><td>Windows Latin 1 character, should be ok, too</td></tr>
+<tr><td>&#x100;</td> <td>A with macron (line above)</td><td>Latin Extended-A character, not present in all fonts</td></tr>
+<tr><td>&Omega;</td> <td>capital omega</td><td>A Greek letter</td></tr>
+<tr><td>&#x2212;</td> <td>minus sign</td><td>Unicode minus</td></tr>
+<tr><td>&#x2300;</td> <td>diameter sign</td><td>relatively rare in fonts</td></tr>
+</table>
+
 <h2 id="forms">Forms</h2>
 <form action="">
 <input type="hidden" name="hidden field" value="42">
@@ -221,49 +254,23 @@ lists) are problematic from the <a href="#">usability</a> perspective, but they 
 	<option>One</option>
 	<option selected>two (default)</option>
 	<option>three</option>
-</select></label></div>
+</select></div>
 
 <div><label for="f11">A <code>select</code> element with <code>size="3"</code> (listbox):</label>
 <select id="f11" name="select2" size="3">
-<option>one
-<option selected>two (default)
-<option>three
-</select></div>
-<div><label for="f99">Submit button:
-<input id="submit" type="submit" name="submit" value="Just a test"></label></div>
-</form>
-<h2 id="tables">Tables</h2>
-<p>The following table has a caption. The first row and the first column
-contain table header cells (<code>th</code> elements) only; other cells
-are data cells (<code>td</code> elements), with <code>align="right"</code>
-attributes:</p>
-
-<table summary="Each row names a Nordic country and specifies its total area and land area, in square kilometers">
-<caption>Sample table: Areas of the Nordic countries, in sq km</caption>
-<tr><th scope="col">Country</th><th scope="col">Total area</th><th scope="col">Land area</th></tr>
-<tr><th scope="row">Denmark</th><td>43,070</td><td>42,370</td></tr>
-<tr><th scope="row">Finland</th><td>337,030</td><td>305,470</td></tr>
-<tr><th scope="row">Iceland</th><td>103,000</td><td>100,250</td></tr>
-<tr><th scope="row">Norway</th><td>324,220</td><td>307,860</td></tr>
-<tr><th scope="row">Sweden</th><td>449,964</td><td>410,928</td></tr>
-</table>
-
-<h2 id="characters">Character</h2>
-<p>The following table has some sample characters with annotations. If the browser&#8217;s default font does not contain all of them, they may get displayed using backup fonts. This may cause stylistic differences, but it should not prevent the characters from being displayed at all.</p>
-
-<table>
-<tr><th>Char.</th><th>Explanation</th><th>Notes</th></tr>
-<tr><td>�</td> <td>e with circumflex</td><td>Latin 1 character, should be ok</td></tr>
-<tr><td>&#8212;</td> <td>em dash</td><td>Windows Latin 1 character, should be ok, too</td></tr>
-<tr><td>&#x100;</td> <td>A with macron (line above)</td><td>Latin Extended-A character, not present in all fonts</td></tr>
-<tr><td>&Omega;</td> <td>capital omega</td><td>A Greek letter</td></tr>
-<tr><td>&#x2212;</td> <td>minus sign</td><td>Unicode minus</td></tr>
-<tr><td>&#x2300;</td> <td>diameter sign</td><td>relatively rare in fonts</td></tr>
-</table>
-	</div>
-
+	<option>one</option>
+	<option selected>two (default)</option>
+	<option>three</option>
+</select>
 </div>
+<div><label for="f99">Submit button: <input id="submit" type="submit" name="submit" value="Just a test"></label></div>
+</form>
 
+
+
+
+	</div>
+</div>
 
 </body>
 </html>
