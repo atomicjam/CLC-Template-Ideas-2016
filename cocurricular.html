@@ -9,32 +9,6 @@
 <!-- clc-bootstrap loosly based off twitter bootstrap -->
 <link rel="stylesheet" href="clc_bootstrap.css" />
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-<script>
-$(function() {
-	//JQUERY DOM READY CHECK
-
-	// scroll when down is clicked
-	$("#menu").click(function(){
-		$("#menu, #navigation").toggleClass("is-active");
-	});
-
-	// pin logo and slide in menu backdrop when scrolled past point
-	$(window).scroll(function() {
-	    var scroll = $(window).scrollTop();
-	    if (scroll >=  Math.max(document.documentElement.clientHeight - 200, window.innerHeight - 200 || 500) ) {
-	        $(".logo").addClass("logo--scrolled");
-					$(".menu__background").addClass("menu__background--scrolled");
-	    } else {
-	        $(".logo").removeClass("logo--scrolled");
-					$(".menu__background").removeClass("menu__background--scrolled");
-	    }
-	});
-
-
-
-});
-</script>
-
 </head>
 <body>
 
@@ -69,10 +43,10 @@ $(function() {
 				<li>Forms</li>
 			</ul>
 		</nav>
-		<img src="images/downthick.svg" class="down" onclick="$('html, body').animate({scrollTop: $('.down').offset().top}, 1000);"/>
+		<img src="images/downthick.svg" class="down" id="downarrow" />
 	</div>
 </div>
-<div class="container-fluid" id="top">
+<div class="container-fluid" id="tagline">
 	<div class="row">
 		<section class="columns">
 		<h2 id="pagecolumns">Co-Curricular</h2>
@@ -87,7 +61,7 @@ $(function() {
 		<a href="#">
 			<div class="col-md-4 box nopad">
 				<span class="boxlink-zoom">Lorem ipsum</span>
-				<div class="imagebox-zoom"  style="background-image: radial-gradient(circle, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url('images/stock/image2.JPG');background-position: left;">
+				<div class="imagebox-zoom"  style="background-image: url('images/stock/image2.JPG'), radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.5));background-position: left;">
 				</div>
 			</div>
 		</a>
@@ -95,7 +69,7 @@ $(function() {
 		<a href="#">
 			<div class="col-md-4 box nopad">
 				<span class="boxlink-zoom">Lorem ipsum</span>
-				<div class="imagebox-zoom"  style="background-image: radial-gradient(circle, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url('images/stock/image3.JPG');background-position: right;">
+				<div class="imagebox-zoom"  style="background-image: url('images/stock/image3.JPG'), radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.5));background-position: right;">
 				</div>
 			</div>
 		</a>
@@ -166,5 +140,33 @@ $(function() {
 	</div>
 	<div class="clearfix"></div>
 </footer>
+<script>
+$(function() {
+	//JQUERY DOM READY CHECK
+		// down arrow scroller
+		$("#downarrow").click(function(){
+			$('html, body').animate({ scrollTop: $('#tagline').offset().top }, 1000);
+		});
+
+		// toggle menu
+		$("#menu").click(function(){
+			$("#menu, #navigation").toggleClass("is-active");
+			$(".logo--scrolled, .menu__background").toggleClass("--hidden");
+		});
+
+		// pin logo and slide in menu backdrop when scrolled past point
+		$(window).scroll(function() {
+		    var scroll = $(window).scrollTop();
+		    if (scroll >=  Math.max(document.documentElement.clientHeight /2, window.innerHeight /2 || 250) ) {
+		        $(".logo").addClass("logo--scrolled");
+						$(".menu__background").addClass("menu__background--scrolled");
+		    } else {
+		        $(".logo").removeClass("logo--scrolled");
+						$(".menu__background").removeClass("menu__background--scrolled");
+		    }
+		});
+	// end dom ready check
+});
+</script>
 </body>
 </html>

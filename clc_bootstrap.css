@@ -339,8 +339,9 @@ footer ul li:first-child:after  {
 .imagebox {
   background-size: cover;
   background-position: right;
-  background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.3)), url('images/stock/image1.JPG');
+  background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(255,0,0,0.3));
   transition: all 2.5s ease-out;
+  will-change: auto;
 }
 .imagebox * {
   color: white;
@@ -354,8 +355,9 @@ footer ul li:first-child:after  {
   width: 100%;
   background-size: cover;
   background-position: right;
-  background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.3)), url('images/stock/image1.JPG');
-  transition: all 2s ease-out;
+  background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(255,0,0,0.3));
+  transition: all 1s ease-out;
+  will-change: auto;
   transform: scale(1);
   color: white;
   text-rendering: optimizeLegibility;
@@ -379,7 +381,9 @@ footer ul li:first-child:after  {
   position: absolute;
   top: 2rem;
   left: 2rem;
-  padding-right: 2rem;
+  margin-right: 2rem;
+  height: 23vw;
+  overflow: hidden;
   font-size: 1rem;
   color: white;
   z-index: 9;
@@ -398,6 +402,7 @@ a .box {
   left: 2rem;
   z-index: 150;
   transition: all 0.2s ease-in;
+  will-change: auto;
   opacity: 1;
 }
 
@@ -416,6 +421,7 @@ a .box {
   display: block;
   transform: translateY(-5rem);
   transition: all 0.3s ease-in;
+  will-change: auto;
   opacity: 1;
 }
 .menu__background--scrolled {
