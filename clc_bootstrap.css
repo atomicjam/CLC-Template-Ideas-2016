@@ -318,8 +318,8 @@ footer ul li:first-child:after  {
 .box {
   padding: 2rem 0 0 0;
   margin: 0;
-  height: 30vw;
-  min-height: 30vw;
+  height: 33vw;
+  min-height: 33vw;
   overflow: hidden;
 }
 .boxlink {
@@ -398,6 +398,7 @@ a .box {
   left: 2rem;
   z-index: 150;
   transition: all 0.2s ease-in;
+  opacity: 1;
 }
 
 .logo--scrolled {
@@ -405,7 +406,7 @@ a .box {
   top: 1.5rem;
 }
 .menu__background {
-  background-color: rgba(0,0,0,0.70);
+  background-color: rgba(0,0,0,0.60);
   position: fixed;
   top: 0;
   left: 0;
@@ -415,9 +416,13 @@ a .box {
   display: block;
   transform: translateY(-5rem);
   transition: all 0.3s ease-in;
+  opacity: 1;
 }
 .menu__background--scrolled {
   transform: translateY(0);
+}
+.--hidden {
+  opacity: 0;
 }
 
 
@@ -701,8 +706,8 @@ nav li a {
 /* Responsive tweaks */
 @media (max-width: 992px) {
   .box {
-    height: 70vw;
-    min-height: 70vw;
+    /*height: 70vw;
+    min-height: 70vw;*/
   }
   #navigation {
     width: 100vw;
