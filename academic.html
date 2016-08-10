@@ -11,9 +11,27 @@
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script>
 $(function() {
+	//JQUERY DOM READY CHECK
+
+	// scroll when down is clicked
 	$("#menu").click(function(){
 		$("#menu, #navigation").toggleClass("is-active");
 	});
+
+	// pin logo and slide in menu backdrop when scrolled past point
+	$(window).scroll(function() {
+	    var scroll = $(window).scrollTop();
+	    if (scroll >=  Math.max(document.documentElement.clientHeight - 200, window.innerHeight - 200 || 500) ) {
+	        $(".logo").addClass("logo--scrolled");
+					$(".menu__background").addClass("menu__background--scrolled");
+	    } else {
+	        $(".logo").removeClass("logo--scrolled");
+					$(".menu__background").removeClass("menu__background--scrolled");
+	    }
+	});
+
+
+
 });
 </script>
 
@@ -22,7 +40,8 @@ $(function() {
 
 <div class="container-fluid wide">
 	<div class="row banner short" style="background-image: url('images/stock/academic.jpg');background-position: 75%;">
-		<a href="#"><img src="images/CLC_Logo_Xsmall_White.svg" style="width: 250px;height: auto;float:left; margin: 2rem 0 0 2rem;" /></a>
+		<div class="menu__background"></div>
+		<a href="#"><img src="images/CLC_Logo_Xsmall_White.svg" class="logo" id="logo" /></a>
 		<button id="menu" class="hamburger hamburger--collapse" type="button">
 			<span class="hamburger-box">
 				<span class="hamburger-inner"></span>
