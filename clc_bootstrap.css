@@ -1,5 +1,6 @@
 /* Fonts */
-@font-face {
+/* uncomment weights if needed */
+/*@font-face {
   font-weight: 100;
   font-style: normal;
   font-family: 'verlag';
@@ -7,7 +8,7 @@
   url('fonts/verlag-xlight-webfont.woff') format('woff'),
   url('fonts/verlag-xlight-webfont.ttf') format('truetype'),
   url('fonts/verlag-xlight-webfont.svg') format('svg');
-}
+}*/
 @font-face {
   font-weight: 200;
   font-style: normal;
@@ -26,7 +27,7 @@
   url('fonts/verlag-book-webfont.ttf') format('truetype'),
   url('fonts/verlag-book-webfont.svg') format('svg');
 }
-@font-face {
+/*@font-face {
   font-weight: 400;
   font-style: normal;
   font-family: 'verlag';
@@ -34,7 +35,7 @@
   url('fonts/verlag-bold-webfont.woff') format('woff'),
   url('fonts/verlag-bold-webfont.ttf') format('truetype'),
   url('fonts/verlag-bold-webfont.svg') format('svg');
-}
+}*/
 @font-face {
   font-weight: 500;
   font-style: normal;
@@ -62,7 +63,6 @@ html {
   margin: 0;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-variant-numeric:;
 }
 body {
   background-color: #fff;
@@ -335,6 +335,9 @@ footer ul li:first-child:after  {
   padding: 0;
   margin: 0;
   font-size: 1rem;
+  height: 23vw;
+  overflow: hidden;
+
 }
 .imagebox {
   background-size: cover;
@@ -356,7 +359,7 @@ footer ul li:first-child:after  {
   background-size: cover;
   background-position: right;
   background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(255,0,0,0.3));
-  transition: all 1s ease-out;
+  transition: all 1.5s ease-out;
   will-change: auto;
   transform: scale(1);
   color: white;
@@ -364,7 +367,8 @@ footer ul li:first-child:after  {
   background-blend-mode: multiply;
 }
 .imagebox-zoom:hover {
-  transform: scale(1.04) rotateZ(1deg);
+  transform: scale(1.07);
+  /*rotateZ(1deg);*/
 }
 .boxlink-zoom {
   position: absolute;
@@ -429,6 +433,8 @@ a .box {
 }
 .--hidden {
   opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateZ(0);
 }
 
 
@@ -459,7 +465,7 @@ a .box {
 }
 .down {
   opacity: 0.8;
-  width: 5rem;
+  width: 4rem;
   position: absolute;
   bottom: 3rem;
   left: calc(50vw - 2.5rem);
@@ -558,12 +564,11 @@ input[type="checkbox"], input[type="radio"] {
   text-transform: uppercase;
   font-size: 0.8rem;
 }
-/* Menu ui */
+/* menu button ui */
 .hamburger {
   position: fixed;
-  top: 1rem;
-  right: 0;
-  padding: 15px 15px;
+  top: 1.4rem;
+  right: 0.8rem;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, -webkit-filter;
@@ -575,17 +580,21 @@ input[type="checkbox"], input[type="radio"] {
   color: inherit;
   text-transform: none;
   background-color: transparent;
-  border: 0;
   margin: 0;
   overflow: visible;
   outline:none;
   z-index: 100;
+  border: 0;
+}
+button.hamburger {
+  min-width: 0;
+  min-height: 0;
 }
 .hamburger:hover {
   opacity: 0.8;
 }
 .hamburger-box {
-  width: 40px;
+  width: 32px;
   height: 24px;
   display: inline-block;
   position: relative;
@@ -596,7 +605,7 @@ input[type="checkbox"], input[type="radio"] {
   margin-top: -2px;
 }
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 35px;
+  width: 30px;
   height: 2px;
   background-color: #fff;
   position: absolute;
@@ -678,7 +687,7 @@ nav ul {
 }
 nav li {
   text-transform: uppercase;
-  padding-left: 20%;
+  margin-left: 20%;
   color: white;
   margin-bottom: 0.6rem;
 }
@@ -717,6 +726,9 @@ nav li a {
   }
   #navigation {
     width: 100vw;
+  }
+  nav li {
+    margin-left: 5%;
   }
 }
 /* GRID LAYOUT SYSTEM */

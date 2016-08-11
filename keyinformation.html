@@ -36,7 +36,7 @@
 			</ul>
 			<ul>
 				<li><a href="page.html">Random Page</a></li>
-				<li>Day/Boarding</li>
+				<li><a href="tablepage.html">Table Page</a></li>
 				<li>Admissions at a glance</li>
 				<li>Feeder Schools</li>
 				<li>Academic</li>
@@ -159,7 +159,7 @@ $(function() {
 		// pin logo and slide in menu backdrop when scrolled past point
 		$(window).scroll(function() {
 		    var scroll = $(window).scrollTop();
-		    if (scroll >=  Math.max(document.documentElement.clientHeight /2, window.innerHeight /2 || 250) ) {
+		    if (scroll >=  Math.max(document.documentElement.clientHeight /3, window.innerHeight /3 || 250) ) {
 		        $(".logo").addClass("logo--scrolled");
 						$(".menu__background").addClass("menu__background--scrolled");
 		    } else {
