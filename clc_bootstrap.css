@@ -594,6 +594,16 @@ input[type="checkbox"], input[type="radio"] {
   font-size: 0.8rem;
 }
 /* menu button ui */
+.search {
+  position: fixed;
+  top: 2rem;
+  right: 4.5rem;
+  width: 22px;
+  height: auto;
+}
+.search:hover {
+  opacity: 0.8;
+}
 .hamburger {
   position: fixed;
   top: 1.4rem;
