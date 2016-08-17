@@ -347,11 +347,31 @@ footer ul li:first-child:after  {
   background-size: cover;
   background-position: right;
   background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(255,0,0,0.3));
-  transition: all 2.5s ease-out;
-  will-change: auto;
 }
 .imagebox * {
   color: white;
+}
+.videobox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.html5video  {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%;
+  min-height: 100%;
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .imagebox-zoom {
@@ -362,17 +382,16 @@ footer ul li:first-child:after  {
   width: 100%;
   background-size: cover;
   background-position: right;
-  background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(255,0,0,0.3));
-  transition: all 1.5s ease-out;
-  will-change: auto;
+  background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.3));
+  transition: all 2.5s ease-out;
+  will-change: transform;
   transform: scale(1);
   color: white;
   text-rendering: optimizeLegibility;
   background-blend-mode: multiply;
 }
 .imagebox-zoom:hover {
-  transform: scale(1.07);
-  /*rotateZ(1deg);*/
+  transform: scale(1.05);
 }
 .boxlink-zoom {
   position: absolute;
@@ -441,7 +460,6 @@ a .box {
   -webkit-transform: translateZ(0);
 }
 
-
 .tagline {
   padding: 5rem 3rem;
   width: 100%;
@@ -459,7 +477,7 @@ a .box {
   min-height: 100vh;
   overflow: hidden;
   background-size: cover;
-  background-position: center;
+  /*background-position: center;*/
   /*background-image: url('images/stock/image2.JPG');*/
 }
 .short {
@@ -633,7 +651,7 @@ button.hamburger {
   opacity: 0.8;
 }
 .hamburger-box {
-  width: 32px;
+  width: 30px;
   height: 24px;
   display: inline-block;
   position: relative;
@@ -644,7 +662,7 @@ button.hamburger {
   margin-top: -2px;
 }
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 30px;
+  width: 28px;
   height: 2px;
   background-color: #fff;
   position: absolute;
@@ -741,7 +759,7 @@ nav li a {
   float: none;
 }
 .thirdlevel ul {
-  margin: 0.3rem 0;
+  margin: 3rem 0.3rem;
 }
 .thirdlevel li {
   margin-left: 0;
@@ -776,7 +794,10 @@ nav li a {
   column-span: all;
   padding: 0 1rem 0 0;
 }
-
+.space {
+  padding: 1rem;
+  content:'';
+}
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
