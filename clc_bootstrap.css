@@ -752,9 +752,13 @@ nav li:before {
   content: '';
 }
 nav li a {
-  color: rgb(115,130,120);
+  color: rgb(235,235,235);
   font-size: 1rem;
 }
+nav li a:hover {
+  color: rgb(115,130,120);
+}
+
 .thirdlevel ul {
   float: none;
 }
