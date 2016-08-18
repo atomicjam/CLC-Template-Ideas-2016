@@ -155,21 +155,32 @@ $(function() {
 		});
 
 		// toggle menu
-		$("#menu").click(function(){
+		$("#menu").click(function() {
+			// toggle class is-active to fire css3 animation and translation
 			$("#menu, #navigation").toggleClass("is-active");
-			$(".logo--scrolled, .menu__background").toggleClass("--hidden");
+			// hide menu background off screen
+			$(".menu__background").toggleClass("offscreen");
+			// hide logo if viewport scrolled
+			$(".logo--scrolled").toggleClass("ninja");
 		});
+
 
 		// pin logo and slide in menu backdrop when scrolled past point
 		$(window).scroll(function() {
-		    var scroll = $(window).scrollTop();
-		    if (scroll >=  Math.max(document.documentElement.clientHeight /3, window.innerHeight /3 || 250) ) {
-		        $(".logo").addClass("logo--scrolled");
-						$(".menu__background").addClass("menu__background--scrolled");
-		    } else {
-		        $(".logo").removeClass("logo--scrolled");
-						$(".menu__background").removeClass("menu__background--scrolled");
-		    }
+			var scroll = $(window).scrollTop();
+			if (scroll >= Math.max(document.documentElement.clientHeight / 3, window.innerHeight / 3 || 250)) {
+				$(".logo").addClass("logo--scrolled");
+				$(".menu__background").addClass("menu__background--scrolled");
+					// if menu is active hide the scrolled logo but not the large top logo
+					if ($("#menu").hasClass("is-active")) {
+						$(".logo--scrolled").addClass("ninja");
+					}
+
+			} else {
+				$(".logo--scrolled").removeClass("ninja");
+				$(".logo").removeClass("logo--scrolled");
+				$(".menu__background").removeClass("menu__background--scrolled");
+			}
 		});
 	// end dom ready check
 });

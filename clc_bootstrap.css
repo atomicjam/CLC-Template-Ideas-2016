@@ -428,7 +428,7 @@ a .box {
   top: 2rem;
   left: 2rem;
   z-index: 150;
-  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in-out;
   will-change: auto;
   opacity: 1;
 }
@@ -447,19 +447,19 @@ a .box {
   z-index: 50;
   display: block;
   transform: translateY(-5rem);
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in-out;
   will-change: auto;
   opacity: 1;
 }
 .menu__background--scrolled {
   transform: translateY(0);
 }
-.--hidden {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translateZ(0);
+.offscreen {
+  transform: translateY(-10rem);
 }
-
+.ninja {
+  opacity: 0;
+}
 .tagline {
   padding: 5rem 3rem;
   width: 100%;
