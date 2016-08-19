@@ -769,6 +769,9 @@ nav li a:hover {
   margin-left: 0;
   list-style: none;
 }
+.thirdlevel a {
+  color: rgb(115,130,120);
+}
 /* HELPER CLASSES */
 .clearfix {
   clear: both;
