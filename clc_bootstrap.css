@@ -543,21 +543,33 @@ a .box {
   padding: 2rem 0.5rem 0 0;
 }
 /* FORMS */
+form {
+  max-width: 450px;
+  padding: 1rem 0;
+}
 input, textarea, button {
   background: rgba(255,255,255,0.25);
   color: #777777;
-  border: 1px solid #6b6b6b;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
   padding: 0.5rem 1rem;
   font-family: 'verlag', Arial;
   resize: none;
   vertical-align: bottom;
   font-size: 0.9rem;
   max-width: 550px;
+  outline: none;
+  transition: all 0.5s ease-out;
+  font-weight: 300;
+}
+input:focus, textarea:focus, button:focus {
+  background: rgba(0,0,0,0.05);
 }
 select {
   background: rgba(255,255,255,0.25);
   color: #777777;
-  border: 1px solid #6b6b6b;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
   padding: 0.5rem 1.0rem;
   font-family: 'verlag', Arial;
   outline: none;
@@ -566,21 +578,24 @@ select {
   -webkit-appearance:none;
 }
 fieldset {
-  border: 1px solid transparent;
-  border-top: 1px solid rgba(0,0,0,0.2);
+  border: 0px solid transparent;
+  border-top: 0px solid rgba(0,0,0,0.2);
   padding: 0.5rem;
   margin: 0.5rem 0;
   overflow: hidden;
 }
 fieldset legend {
-  padding: 0 1rem;
+  padding: 0rem;
   font-size: 0.9rem;
   margin-left: 0;
+  padding-top: 1rem;
   text-transform: uppercase;
   text-align: right;
+  color: rgb(115,130,120);
+  font-weight: 300;
 }
 label {
-  text-transform: uppercase;
+  text-transform: none;
   padding: 0.5rem 0;
   font-size: 0.9rem;
   border: 1px solid transparent;
@@ -592,6 +607,19 @@ button {
   font-family: inherit;
   font-size: 0.8rem;
   text-transform: uppercase;
+  margin-right: 0.5rem;
+  border: 1px solid transparent;
+  background: rgba(0,0,0,0.05);
+  border-radius: 0;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+  float: right;
+}
+button:hover, button:active, #reset:hover, #reset:active, #submit:hover, #submit:active {
+  background: rgba(115,130,120,0.5);
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 10px;
 }
 input, select, textarea {
   display: block;
@@ -610,6 +638,9 @@ input[type="checkbox"], input[type="radio"] {
   width: 150px;
   text-transform: uppercase;
   font-size: 0.8rem;
+  margin-left: 0.5rem;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 0;
 }
 /* menu button ui */
 .search {
