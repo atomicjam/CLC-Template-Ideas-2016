@@ -615,7 +615,7 @@ button {
   cursor: pointer;
   float: right;
 }
-button:hover, button:active, #reset:hover, #reset:active, #submit:hover, #submit:active {
+form button:hover, form button:active, #reset:hover, #reset:active, #submit:hover, #submit:active {
   background: rgba(115,130,120,0.5);
   color: white;
   border: 1px solid transparent;
