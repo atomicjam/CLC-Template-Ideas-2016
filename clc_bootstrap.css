@@ -68,7 +68,7 @@ html {
 body {
   background-color: #fff;
   font-family: 'verlag', Arial;
-  color: rgb(130,130,130);
+  color: #595959;
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -89,13 +89,13 @@ body {
   background: rgb(50,50,50);
 }
 .secondarycolour * {
-  color: rgb(130,130,130);
+  color: #c0c0c0;
 }
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'verlag', Arial;
   font-weight: 200;
-  color: rgb(135,150,140);
+  color: #677b6e;
   padding: 15px 0;
   margin: 0;
   text-decoration: none;
@@ -114,7 +114,7 @@ h2:after, h3:after, h4:after, h5:after, h6:after {
   height: 1rem;
   width: 1.5rem;
   margin-bottom: 0;
-  border-bottom: 1px solid rgb(135,150,140);
+  border-bottom: 1px solid #677b6e;
 }
 .primarycolour h2:after, .primarycolour h3:after, .primarycolour h4:after, .primarycolour h5:after, .primarycolour h6:after {
     border-bottom: 1px solid white;
@@ -142,7 +142,7 @@ h6 {
 p, div {
   font-family: 'verlag', Arial;
   font-size: 1rem;
-  color: rgb(130,130,130);
+  color: #595959;
   padding: 0;
   text-decoration: none;
   font-weight: 200;
@@ -174,13 +174,13 @@ abbr:hover::after {
   content: attr(title);
 }
 blockquote {
-  font-style: italic;
+  font-style: normal;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
 }
 hr {
   border: 0;
-  border-bottom: solid 1px rgba(130,130,130,0.5);
+  border-bottom: solid 1px rgba(200,200,200,0.7);
   column-span: all;
   margin: 2rem 0;
 }
@@ -194,8 +194,9 @@ ul {
   list-style-type: none;
   list-style-position: inside;
   margin: 0.5rem 0;
+  padding: 0.5rem 0;
   column-span: all;
-  max-width: 35vw;
+  max-width: 450px;
 }
 table {
   margin: 30px 0;
@@ -223,7 +224,7 @@ code {
 code {
   padding: 2px 6px;
   font-size: 90%;
-  color: rgb(115,130,120);
+  color: #677b6e;
   background-color: #f9f2f4;
   border-radius: 4px;
 }
@@ -236,7 +237,7 @@ code {
 a {
   font-family: 'verlag', Arial;
   font-size: 0.9rem;
-  color: rgb(115,130,120);
+  color: #677b6e;
   text-transform: uppercase;
   padding: 0;
   text-decoration: none;
@@ -269,7 +270,7 @@ a:hover {
 footer {
   display: block;
   background: rgb(50,50,50);
-  color: rgb(130,130,130);
+  color: #c0c0c0;
   margin: 0;
   padding-top: 1rem;
 }
@@ -284,7 +285,7 @@ footer ul li:before {
 }
 footer a {
   font-size: 0.7rem;
-  color: rgb(130,130,130);
+  color: #c0c0c0;
 }
 .copyright {
   margin-top: 3rem;
@@ -307,7 +308,7 @@ footer ul li:first-child:after  {
   height: 1rem;
   width: 1.5rem;
   margin-bottom: 1rem;
-  border-bottom: 1px solid rgb(130,130,130);
+  border-bottom: 1px solid #c0c0c0;
 }
 .footernav {
   vertical-align: top;
@@ -323,8 +324,8 @@ footer ul li:first-child:after  {
 .box {
   padding: 2rem 0 0 0;
   margin: 0;
-  height: 33vw;
-  min-height: 33vw;
+  height: 29vw;
+  min-height: 29vw;
   overflow: hidden;
 }
 .boxlink {
@@ -343,6 +344,9 @@ footer ul li:first-child:after  {
   height: 23vw;
   overflow: hidden;
 
+}
+.box.secondarycolour .boxlink {
+  color: #c0c0c0;
 }
 .imagebox {
   background-size: cover;
@@ -581,7 +585,7 @@ select {
 fieldset {
   border: 0px solid transparent;
   border-top: 0px solid rgba(0,0,0,0.2);
-  padding: 0.5rem;
+  padding: 0 !important;
   margin: 0.5rem 0;
   overflow: hidden;
 }
@@ -592,7 +596,7 @@ fieldset legend {
   padding-top: 1rem;
   text-transform: uppercase;
   text-align: left;
-  color: rgb(115,130,120);
+  color: #677b6e;
   font-weight: 300;
 }
 label {
@@ -788,7 +792,7 @@ nav li a {
   font-size: 1rem;
 }
 nav li a:hover {
-  color: rgb(115,130,120);
+  color: #677b6e;
 }
 
 .thirdlevel ul {
@@ -802,7 +806,8 @@ nav li a:hover {
   list-style: none;
 }
 .thirdlevel a {
-  color: rgb(115,130,120);
+  color: #677b6e;
+  font-size: 0.9rem;
 }
 /* HELPER CLASSES */
 .clearfix {
@@ -831,7 +836,7 @@ nav li a:hover {
   width: 50%;
   max-width: none;
   column-span: all;
-  padding: 0 1rem 0 0;
+  padding: 0 1.8rem 0 0;
 }
 .space {
   padding: 1rem;
