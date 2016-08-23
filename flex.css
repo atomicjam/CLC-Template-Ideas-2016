@@ -1,3 +1,21 @@
+@font-face {
+  font-weight: 200;
+  font-style: normal;
+  font-family: 'verlag';
+  src: url('fonts/verlag-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/verlag-light-webfont.woff') format('woff'),
+  url('fonts/verlag-light-webfont.ttf') format('truetype'),
+  url('fonts/verlag-light-webfont.svg') format('svg');
+}
+@font-face {
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'verlag';
+  src: url('fonts/verlag-book-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/verlag-book-webfont.woff') format('woff'),
+  url('fonts/verlag-book-webfont.ttf') format('truetype'),
+  url('fonts/verlag-book-webfont.svg') format('svg');
+}
 /* Box model */
 * {
   -webkit-box-sizing: border-box;
@@ -73,7 +91,12 @@ a {
 a:hover {
   background-color: transparent;
 }
-/* footer */
+
+
+
+
+
+/* footer styles  */
 footer {
   display: flex;
   background: rgb(50,50,50);
@@ -125,7 +148,7 @@ footer a {
   padding-top: 2rem;
 }
 .social img {
-  width: 32px;
+  width: 33px;
   height: auto;
   margin-right: 2px;
 }
@@ -150,8 +173,7 @@ footer a {
 .copyright hr {
   margin: 1rem 0;
 }
-
-/* responsive */
+/* responsive footer */
 @media (min-width: 900px) {
   .footer--logo {
     width: 25%;
@@ -161,3 +183,4 @@ footer a {
     justify-content: flex-start;
   }
 }
+/* end footer styles */
