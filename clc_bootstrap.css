@@ -478,12 +478,12 @@ a .box {
 
 /* page body columns */
 .columns {
-  -webkit-columns: 350px 3;
-     -moz-columns: 350px 3;
-          columns: 350px 3;
-  -webkit-column-gap: 1.5rem;
-  -moz-column-gap: 1.5rem;
-  column-gap: 1.5rem;
+  -webkit-columns: 320px 3;
+     -moz-columns: 320px 3;
+          columns: 320px 3;
+  -webkit-column-gap: 2.5rem;
+  -moz-column-gap: 2.5rem;
+  column-gap: 2.5rem;
 }
 .columns h3 {
   margin-top: 2rem;
