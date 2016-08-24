@@ -487,7 +487,10 @@ a .box {
   -webkit-column-gap: 2.5rem;
   -moz-column-gap: 2.5rem;
   column-gap: 2.5rem;
+<<<<<<< HEAD
   min-height: 700px;
+=======
+>>>>>>> origin/master
 }
 .columns h3 {
   margin-top: 2rem;
