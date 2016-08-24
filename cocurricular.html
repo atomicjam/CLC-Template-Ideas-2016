@@ -73,55 +73,50 @@
 	</div>
 </div>
 <!-- body and 3rd level nav -->
-<div class="container-fluid" id="tagline">
-	<div class="row">
-		<div class="col-sm-3 nopad">
-			<nav class="thirdlevel">
-				<ul>
-					<li><a href="">Societies &amp; Clubs</a></li>
-					<li><a href="">The Arts</a></li>
-					<li><a href="">Sports</a></li>
-					<li><a href="">Outdoor Education</a></li>
-					<li><a href="">Community Links</a></li>
-					<li><a href="">Social Responsibility</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="col-sm-9 nopad">
-			<section class="columns">
-			<h2 id="pagecolumns">Co-Curricular</h2>
-			<p>It is important that College supports each girl in striking a successful balance between academic and co-curricular activity. To this end, our provision in this area is exciting and well-resourced, and presents each girl with an opportunity to find her niche.</p>
-			<p>We understand that every girl is an individual, they are all encouraged to find an activity that suits her. There is no fixed formula for the number and type of activities that a girl can do, but most settle into a combination of perhaps two to three weekly activities outside of normal teaching time. Despite the fact that many girls are very active in both the sporting and musical lives of College, we do not have houses which are linked to particular activities as is the case in some schools.</p>
-			<p>Everyone is encouraged to 'have a go' whatever their level of ability.</p>
-			</section>
-		</div>
+<div class="grid" id="tagline">
+	<div class="grid--3">
+		<nav class="thirdlevel">
+			<ul>
+				<li><a href="">Societies &amp; Clubs</a></li>
+				<li><a href="">The Arts</a></li>
+				<li><a href="">Sports</a></li>
+				<li><a href="">Outdoor Education</a></li>
+				<li><a href="">Community Links</a></li>
+				<li><a href="">Social Responsibility</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="grid--9">
+		<section class="columns">
+		<h2 id="pagecolumns">Co-Curricular</h2>
+		<p>It is important that College supports each girl in striking a successful balance between academic and co-curricular activity. To this end, our provision in this area is exciting and well-resourced, and presents each girl with an opportunity to find her niche.</p>
+		<p>We understand that every girl is an individual, they are all encouraged to find an activity that suits her. There is no fixed formula for the number and type of activities that a girl can do, but most settle into a combination of perhaps two to three weekly activities outside of normal teaching time. Despite the fact that many girls are very active in both the sporting and musical lives of College, we do not have houses which are linked to particular activities as is the case in some schools.</p>
+		<p>Everyone is encouraged to 'have a go' whatever their level of ability.</p>
+		</section>
 	</div>
 </div>
-
 <!-- 3 boxes -->
-<div class="container-fluid wide">
-	<div class="row">
+<div class="grid nomargin nopad">
 		<a href="#">
-			<div class="col-md-4 box nopad">
-				<span class="boxlink-zoom">Annual General Meeting</span>
+			<div class="grid--4 box nopad nomargin">
+				<span class="boxlink-zoom">AGM</span>
 				<div class="imagebox-zoom"  style="background-image: url('images/stock/image70.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: left;">
 				</div>
 			</div>
 		</a>
 		<a href="#">
-			<div class="col-md-4 primarycolour box">
+			<div class="grid--4 primarycolour box nomargin">
 				<blockquote>"The journey begins with developing mental agility, opinions, habits, self-belief and the ability to live and work with others. These are qualities that we nature and encourage here, with a focus on positive psychology."</blockquote>
 				<span class="boxlink">Eve Jardine-Young<br/>Principal</span>
 			</div>
 		</a>
 		<a href="#">
-			<div class="col-md-4 box nopad">
+			<div class="grid--4 box nopad nomargin">
 				<span class="boxlink-zoom">Guild Snapshot</span>
 				<div class="imagebox-zoom"  style="background-image: url('images/stock/image69.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: right;">
 				</div>
 			</div>
 		</a>
-	</div>
 </div>
 <!-- footer -->
 <footer class="secondarycolour">
@@ -190,7 +185,7 @@ $(function() {
 	//JQUERY DOM READY CHECK
 		// down arrow scroller
 		$("#downarrow").click(function(){
-			$('html, body').animate({ scrollTop: $('#tagline').offset().top }, 1000);
+			$('html, body').animate({ scrollTop: $('#tagline').offset().top -90 }, 1000);
 		});
 
 		// toggle menu

@@ -73,55 +73,51 @@
 	</div>
 </div>
 <!-- main content and 3rd level nav -->
-<div class="container-fluid" id="tagline">
-	<div class="row">
-		<div class="col-sm-3 nopad">
-			<nav class="thirdlevel">
-				<ul>
-					<li><a href="">Bording</a></li>
-					<li><a href="">Weekends</a></li>
-					<li><a href="">Day Girls</a></li>
-					<li><a href="">Our Town</a></li>
-					<li><a href="">Pastoral Care</a></li>
-					<li><a href="">Saturday Programme</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="col-sm-9 nopad">
-			<section class="columns">
-			<h2 id="pagecolumns">Life at CLC</h2>
-			<p>College is a busy place. Whether you are a pupil, a member of staff, a parent or visitor you cannot fail to gain a sense of the purposefulness, the focus, the energy and the fun which permeate College life. Standards and expectations are high. Our commitment to academic excellence, responsible leadership and moral integrity provides an educational experience that is rewarding for all those involved.</p>
-			<p>As a happy, tolerant and vibrant community we are proud of our distinguished past and look forward to an exciting future filled with success in many different areas.  We hope our website demonstrates the depth and the diversity of opportunity available to girls in their work at College, their co-curricular activities and time in the Houses. We support initiative and encourage the taking of responsibility in a way which balances order and individual freedom.</p>
-			<p>The limits to what constitutes good behaviour are clearly understood. There is mutual respect between staff and pupils and girls have a genuine regard for each other's needs, enabling them to form positive and long-lasting relationships.</p>
-			<p>During her time at College every girl is supported by two key people - her Housemistress and her Tutor. At each stage in her education they will get to know her well and will be a source of guidance and support through her teenage years. In addition, there are members of staff who specialise in certain areas (e.g. Higher Education, Careers, Wellbeing and Counselling) and who are always on hand to give advice.</p>
-			</section>
-		</div>
+<div class="grid" id="tagline">
+	<div class="grid--3">
+		<nav class="thirdlevel">
+			<ul>
+				<li><a href="">Bording</a></li>
+				<li><a href="">Weekends</a></li>
+				<li><a href="">Day Girls</a></li>
+				<li><a href="">Our Town</a></li>
+				<li><a href="">Pastoral Care</a></li>
+				<li><a href="">Saturday Programme</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="grid--9">
+		<section class="columns">
+		<h2 id="pagecolumns">Life at CLC</h2>
+		<p>College is a busy place. Whether you are a pupil, a member of staff, a parent or visitor you cannot fail to gain a sense of the purposefulness, the focus, the energy and the fun which permeate College life. Standards and expectations are high. Our commitment to academic excellence, responsible leadership and moral integrity provides an educational experience that is rewarding for all those involved.</p>
+		<p>As a happy, tolerant and vibrant community we are proud of our distinguished past and look forward to an exciting future filled with success in many different areas.  We hope our website demonstrates the depth and the diversity of opportunity available to girls in their work at College, their co-curricular activities and time in the Houses. We support initiative and encourage the taking of responsibility in a way which balances order and individual freedom.</p>
+		<p>The limits to what constitutes good behaviour are clearly understood. There is mutual respect between staff and pupils and girls have a genuine regard for each other's needs, enabling them to form positive and long-lasting relationships.</p>
+		<p>During her time at College every girl is supported by two key people - her Housemistress and her Tutor. At each stage in her education they will get to know her well and will be a source of guidance and support through her teenage years. In addition, there are members of staff who specialise in certain areas (e.g. Higher Education, Careers, Wellbeing and Counselling) and who are always on hand to give advice.</p>
+		</section>
 	</div>
 </div>
 <!-- 3 boxes -->
-<div class="container-fluid wide">
-	<div class="row">
+<div class="grid nomargin nopad">
 		<a href="#">
-			<div class="col-md-4 box nopad">
+			<div class="grid--4 box nopad nomargin">
 				<span class="boxlink-zoom">Whats your game face?</span>
-				<div class="imagebox-zoom"  style="background-image: url('images/stock/image61.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: left;">
+				<div class="imagebox-zoom"  style="background-image: url('images/stock/image61.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: 60% 50%;">
 				</div>
 			</div>
 		</a>
 		<a href="#">
-			<div class="col-md-4 primarycolour box">
+			<div class="grid--4 primarycolour box nomargin">
 				<blockquote>"The journey begins with developing mental agility, opinions, habits, self-belief and the ability to live and work with others. These are qualities that we nature and encourage here, with a focus on positive psychology."</blockquote>
 				<span class="boxlink">Eve Jardine-Young<br/>Principal</span>
 			</div>
 		</a>
 		<a href="#">
-			<div class="col-md-4 box nopad">
+			<div class="grid--4 box nopad nomargin">
 				<span class="boxlink-zoom">Whats your game face?</span>
 				<div class="imagebox-zoom"  style="background-image: url('images/stock/image62.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: right;">
 				</div>
 			</div>
 		</a>
-	</div>
 </div>
 <!-- footer -->
 <footer class="secondarycolour">
@@ -190,7 +186,7 @@ $(function() {
 	//JQUERY DOM READY CHECK
 		// down arrow scroller
 		$("#downarrow").click(function(){
-			$('html, body').animate({ scrollTop: $('#tagline').offset().top }, 1000);
+			$('html, body').animate({ scrollTop: $('#tagline').offset().top -90}, 1000);
 		});
 
 		// toggle menu

@@ -73,64 +73,62 @@
 	</div>
 </div>
 <!-- bodu and 3rd level nav -->
-<div class="container-fluid" id="tagline">
-	<div class="row">
-		<div class="col-sm-3 nopad">
-			<nav class="thirdlevel">
-				<ul>
-					<li><a href="">Current Vacencies</a></li>
-					<li><a href="">Living in Cheltenham</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="col-sm-9 nopad">
-			<section class="columns">
-			<h2 id="pagecolumns">Jobs</h2>
-			<p>Cheltenham Ladies' College is a very special place to work, employing approximately 600 staff in both teaching and non-teaching staff roles.</p>
-			<p>The main College site is situated in the centre of the beautiful Regency town of Cheltenham, with our boarding houses and sports facilities a short walk away. </p>
-			<p>As a teacher here you'll enjoy teaching motivated, intelligent girls who want to learn and you'll have access to great facilities to support teaching and learning.</p>
-			<p>Non-teaching roles at College are diverse, from Chef to Web Developer, Gardener to HR Officer.  Whatever your role, you'll benefit from being part of a large team with opportunities for development and, in many cases, the ability to work flexible hours. </p>
-			<h3>Benefits</h3>
-			<p>We are genuinely committed to our staff and endeavour to offer a range of benefits that people will value and enjoy. These include:
+<div class="grid" id="tagline">
+	<div class="grid--3">
+		<nav class="thirdlevel">
 			<ul>
-			<li>a contributory pension scheme;</li>
-			<li>salary sacrifice options;</li>
-			<li>membership of our Sports Centre available at minimal cost for yourself and at a reduced rate for your family - facilities include a pool, fitness suite, sports hall and squash courts;</li>
-			<li>employee helpline;</li>
-			<li>flexible hours - dependent on role;</li>
-			<li>subsidised restaurant;</li>
-			<li>training and development opportunities.</li>
+				<li><a href="">Current Vacencies</a></li>
+				<li><a href="">Living in Cheltenham</a></li>
 			</ul>
-			</p>
-			</section>
-		</div>
+		</nav>
+	</div>
+	<div class="grid--9">
+		<section class="columns">
+		<h2 id="pagecolumns">Jobs</h2>
+		<p>Cheltenham Ladies' College is a very special place to work, employing approximately 600 staff in both teaching and non-teaching staff roles.</p>
+		<p>The main College site is situated in the centre of the beautiful Regency town of Cheltenham, with our boarding houses and sports facilities a short walk away. </p>
+		<p>As a teacher here you'll enjoy teaching motivated, intelligent girls who want to learn and you'll have access to great facilities to support teaching and learning.</p>
+		<p>Non-teaching roles at College are diverse, from Chef to Web Developer, Gardener to HR Officer.  Whatever your role, you'll benefit from being part of a large team with opportunities for development and, in many cases, the ability to work flexible hours. </p>
+		<h3>Benefits</h3>
+		<p>We are genuinely committed to our staff and endeavour to offer a range of benefits that people will value and enjoy. These include:
+		<ul>
+		<li>a contributory pension scheme;</li>
+		<li>salary sacrifice options;</li>
+		<li>membership of our Sports Centre available at minimal cost for yourself and at a reduced rate for your family - facilities include a pool, fitness suite, sports hall and squash courts;</li>
+		<li>employee helpline;</li>
+		<li>flexible hours - dependent on role;</li>
+		<li>subsidised restaurant;</li>
+		<li>training and development opportunities.</li>
+		</ul>
+		</p>
+		</section>
 	</div>
 </div>
+
 <!-- 3 boxes -->
-<div class="container-fluid wide">
-	<div class="row">
+<div class="grid nomargin nopad">
 		<a href="#">
-			<div class="col-md-4 box nopad">
+			<div class="grid--4 box nopad nomargin">
 				<span class="boxlink-zoom">Enviromental Group</span>
 				<div class="imagebox-zoom"  style="background-image: url('images/stock/image65.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: left;">
 				</div>
 			</div>
 		</a>
 		<a href="#">
-			<div class="col-md-4 secondarycolour box">
+			<div class="grid--4 primarycolour box nomargin">
 				<blockquote>"The journey begins with developing mental agility, opinions, habits, self-belief and the ability to live and work with others. These are qualities that we nature and encourage here, with a focus on positive psychology."</blockquote>
 				<span class="boxlink">Eve Jardine-Young<br/>Principal</span>
 			</div>
 		</a>
 		<a href="#">
-			<div class="col-md-4 box nopad">
+			<div class="grid--4 box nopad nomargin">
 				<span class="boxlink-zoom">Living in Cheltenham</span>
 				<div class="imagebox-zoom"  style="background-image: url('images/stock/image68.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: right;">
 				</div>
 			</div>
 		</a>
-	</div>
 </div>
+
 <!-- footer -->
 <footer class="secondarycolour">
 			<div class="footer--logo">
@@ -198,7 +196,7 @@ $(function() {
 	//JQUERY DOM READY CHECK
 		// down arrow scroller
 		$("#downarrow").click(function(){
-			$('html, body').animate({ scrollTop: $('#tagline').offset().top }, 1000);
+			$('html, body').animate({ scrollTop: $('#tagline').offset().top -90 }, 1000);
 		});
 
 		// toggle menu

@@ -73,8 +73,10 @@
 	</div>
 </div>
 <!-- body without nav -->
-<div class="container-fluid" id="tagline">
-	<div class="row">
+<div class="grid" id="tagline">
+	<div class="grid--3">
+	</div>
+	<div class="grid--9">
 		<section>
 		<h2 id="pagecolumns">Table test page With Page Body</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -210,33 +212,29 @@
 		</section>
 	</div>
 </div>
-
 <!-- 3 boxes -->
-<div class="container-fluid wide">
-	<div class="row">
+<div class="grid nomargin nopad">
 		<a href="#">
-			<div class="col-md-4 box nopad">
+			<div class="grid--4 box nopad nomargin">
 				<span class="boxlink-zoom">Principals Lectures</span>
-				<div class="imagebox-zoom"  style="background-image: url('images/stock/image57.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: left;">
+				<div class="imagebox-zoom"  style="background-image: url('images/stock/image57.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: 60% 50%;">
 				</div>
 			</div>
 		</a>
 		<a href="#">
-			<div class="col-md-4 primarycolour box">
+			<div class="grid--4 primarycolour box nomargin">
 				<blockquote>"The journey begins with developing mental agility, opinions, habits, self-belief and the ability to live and work with others. These are qualities that we nature and encourage here, with a focus on positive psychology."</blockquote>
 				<span class="boxlink">Eve Jardine-Young<br/>Principal</span>
 			</div>
 		</a>
 		<a href="#">
-			<div class="col-md-4 box nopad">
+			<div class="grid--4 box nopad nomargin">
 				<span class="boxlink-zoom">Whats your game face?</span>
 				<div class="imagebox-zoom"  style="background-image: url('images/stock/image58.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: right;">
 				</div>
 			</div>
 		</a>
-	</div>
 </div>
-
 <!-- footer -->
 <footer class="secondarycolour">
 			<div class="footer--logo">
@@ -304,7 +302,7 @@ $(function() {
 	//JQUERY DOM READY CHECK
 		// down arrow scroller
 		$("#downarrow").click(function(){
-			$('html, body').animate({ scrollTop: $('#tagline').offset().top }, 1000);
+			$('html, body').animate({ scrollTop: $('#tagline').offset().top -90}, 1000);
 		});
 
 		// toggle menu

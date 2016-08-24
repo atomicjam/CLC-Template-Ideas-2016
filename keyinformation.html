@@ -73,58 +73,54 @@
 	</div>
 </div>
 <!-- main body and 3rd level nav -->
-<div class="container-fluid" id="tagline">
-	<div class="row">
-		<div class="col-sm-3 nopad">
-			<nav class="thirdlevel">
-				<ul>
-					<li><a href="">Contact</a></li>
-					<li><a href="">Inspection Report</a></li>
-					<li><a href="">Find Us</a></li>
-					<li><a href="">Policies</a></li>
-					<li><a href="">Term Dates</a></li>
-					<li><a href="">Goverance</a></li>
-					<li><a href="">Fees</a></li>
-					<li><a href="">Venue Hire</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="col-sm-9 nopad">
-			<section class="columns">
-			<h2 id="pagecolumns">Key Information</h2>
-			<h3>Pupils</h3>
-			<p>There are around 850 girls in College, spread across Lower College, Upper College and Sixth Form. Approximately 75% are boarders and 25% day girls. Around 150 new girls join us each year, mainly in Lower College (Years 7-9) and Sixth Form (Year 12). Girls come from all over Gloucestershire, the UK and the world. Many have never boarded before joining us and they have come from over 400 different junior schools and diverse educational backgrounds.</p>
-			<h3>Staff</h3>
-			<p>The current full-time teaching staff comprises 89 women and 35 men. There are a further 39 part-time teachers and over 40 peripatetic music and drama teachers. More than 85 of the teachers act as tutors to the girls during their time in College. There are 15 Housemistresses, each with their own team of house staff, to care for the girls.</p>
-			<p>College has an excellent team of IT, administrative, catering, domestic and works support staff. They all work hard to ensure that our organisation, services and provisions are second to none.</p>
-			</section>
-		</div>
+<div class="grid" id="tagline">
+	<div class="grid--3">
+		<nav class="thirdlevel">
+			<ul>
+				<li><a href="">Contact</a></li>
+				<li><a href="">Inspection Report</a></li>
+				<li><a href="">Find Us</a></li>
+				<li><a href="">Policies</a></li>
+				<li><a href="">Term Dates</a></li>
+				<li><a href="">Goverance</a></li>
+				<li><a href="">Fees</a></li>
+				<li><a href="">Venue Hire</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="grid--9">
+		<section class="columns">
+		<h2 id="pagecolumns">Key Information</h2>
+		<h3>Pupils</h3>
+		<p>There are around 850 girls in College, spread across Lower College, Upper College and Sixth Form. Approximately 75% are boarders and 25% day girls. Around 150 new girls join us each year, mainly in Lower College (Years 7-9) and Sixth Form (Year 12). Girls come from all over Gloucestershire, the UK and the world. Many have never boarded before joining us and they have come from over 400 different junior schools and diverse educational backgrounds.</p>
+		<h3>Staff</h3>
+		<p>The current full-time teaching staff comprises 89 women and 35 men. There are a further 39 part-time teachers and over 40 peripatetic music and drama teachers. More than 85 of the teachers act as tutors to the girls during their time in College. There are 15 Housemistresses, each with their own team of house staff, to care for the girls.</p>
+		<p>College has an excellent team of IT, administrative, catering, domestic and works support staff. They all work hard to ensure that our organisation, services and provisions are second to none.</p>
+		</section>
 	</div>
 </div>
 <!-- 3 boxes -->
-<div class="container-fluid wide">
-	<div class="row">
+<div class="grid nomargin nopad">
 		<a href="#">
-			<div class="col-md-4 box nopad">
+			<div class="grid--4 box nopad nomargin">
 				<span class="boxlink-zoom">Whats your game face?</span>
-				<div class="imagebox-zoom"  style="background-image: url('images/stock/image63.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: left;">
+				<div class="imagebox-zoom"  style="background-image: url('images/stock/image63.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: 60% 50%;">
 				</div>
 			</div>
 		</a>
 		<a href="#">
-			<div class="col-md-4 primarycolour box">
+			<div class="grid--4 primarycolour box nomargin">
 				<blockquote>"The journey begins with developing mental agility, opinions, habits, self-belief and the ability to live and work with others. These are qualities that we nature and encourage here, with a focus on positive psychology."</blockquote>
 				<span class="boxlink">Eve Jardine-Young<br/>Principal</span>
 			</div>
 		</a>
 		<a href="#">
-			<div class="col-md-4 box nopad">
+			<div class="grid--4 box nopad nomargin">
 				<span class="boxlink-zoom">Supporting College</span>
 				<div class="imagebox-zoom"  style="background-image: url('images/stock/image64.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: right;">
 				</div>
 			</div>
 		</a>
-	</div>
 </div>
 <!-- footer -->
 <footer class="secondarycolour">
@@ -193,7 +189,7 @@ $(function() {
 	//JQUERY DOM READY CHECK
 		// down arrow scroller
 		$("#downarrow").click(function(){
-			$('html, body').animate({ scrollTop: $('#tagline').offset().top }, 1000);
+			$('html, body').animate({ scrollTop: $('#tagline').offset().top -90}, 1000);
 		});
 
 		// toggle menu

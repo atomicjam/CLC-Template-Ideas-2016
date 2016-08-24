@@ -73,70 +73,60 @@
 	</div>
 </div>
 <!-- main content and 3rd level nav -->
-<div class="container-fluid" id="tagline">
-	<div class="row">
-		<div class="col-sm-3 nopad">
-			<nav class="thirdlevel">
-				<ul>
-					<li><a href="">Lower College Entry</a></li>
-					<li><a href="">Upper College Entry</a></li>
-					<li><a href="">Sixth Form Entry</a></li>
-					<li><a href="">Day Girls At CLC</a></li>
-					<li><a href="">Visit/Open Days</a></li>
-					<li><a href="">Scholarships</a></li>
-					<li><a href="">Bursaries</a></li>
-					<li><a href="">FAQ</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="col-sm-9 nopad">
-			<section class="columns">
-			<h2 id="pagecolumns">Admissions</h2>
-			<p>Each September around 160 girls join College, becoming part of a vibrant, diverse community of approximately 850 girls and 600 academic and operational staff. They follow in the footsteps of thousands of girls who have gone before them, leaving us as young women equipped to meet the challenges of their lives beyond College.</p>
-			<p>We know that our excellent examination results at GCSE, A Level and IB might suggest that we accept only highly academic girls; in fact, we look for girls who have potential, whatever their education before joining us. We want girls to enjoy their academic work and to enjoy making a contribution to College life, be it in academic, music, art, sport or other spheres.</p>
-			<p>Most girls join at 11+, 13+ or 16+ for both day and boarding places; however, if we have space, some girls may also join us at 12+ and 14+ too. All girls who join us must take entrance exams and these take place at various times depending on the year group of entry. More detailed information about this can be found using the links to our Key Dates documents for the relevant year.</p>
-			<p>We understand that choosing the right senior school is a really important decision for both parents and daughters. The journey along the College admissions process usually begins with a <a href="#">visit</a> and we hope to be able to welcome you to College soon.</p>
-			<p>
-				<ul>
-					<li>Download a registration form</li>
-					<li>Request a Prospectus</li>
-				</ul>
-			</p>
-			</section>
-		</div>
+<div class="grid" id="tagline">
+	<div class="grid--3">
+		<nav class="thirdlevel">
+			<ul>
+				<li><a href="">Lower College Entry</a></li>
+				<li><a href="">Upper College Entry</a></li>
+				<li><a href="">Sixth Form Entry</a></li>
+				<li><a href="">Day Girls At CLC</a></li>
+				<li><a href="">Visit/Open Days</a></li>
+				<li><a href="">Scholarships</a></li>
+				<li><a href="">Bursaries</a></li>
+				<li><a href="">FAQ</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="grid--9">
+		<section class="columns">
+		<h2 id="pagecolumns">Admissions</h2>
+		<p>Each September around 160 girls join College, becoming part of a vibrant, diverse community of approximately 850 girls and 600 academic and operational staff. They follow in the footsteps of thousands of girls who have gone before them, leaving us as young women equipped to meet the challenges of their lives beyond College.</p>
+		<p>We know that our excellent examination results at GCSE, A Level and IB might suggest that we accept only highly academic girls; in fact, we look for girls who have potential, whatever their education before joining us. We want girls to enjoy their academic work and to enjoy making a contribution to College life, be it in academic, music, art, sport or other spheres.</p>
+		<p>Most girls join at 11+, 13+ or 16+ for both day and boarding places; however, if we have space, some girls may also join us at 12+ and 14+ too. All girls who join us must take entrance exams and these take place at various times depending on the year group of entry. More detailed information about this can be found using the links to our Key Dates documents for the relevant year.</p>
+		<p>We understand that choosing the right senior school is a really important decision for both parents and daughters. The journey along the College admissions process usually begins with a <a href="#">visit</a> and we hope to be able to welcome you to College soon.</p>
+		<p>
+			<ul>
+				<li>Download a registration form</li>
+				<li>Request a Prospectus</li>
+			</ul>
+		</p>
+		</section>
 	</div>
 </div>
 <!-- 3 boxes -->
-
-<div class="container-fluid wide">
-	<div class="row">
+<div class="grid nomargin nopad">
 		<a href="#">
-			<div class="col-md-4 box nopad">
+			<div class="grid--4 box nopad nomargin">
 				<span class="boxlink-zoom">Pimms O'clock</span>
 				<div class="imagebox-zoom"  style="background-image: url('images/stock/image71.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: left;">
 				</div>
 			</div>
 		</a>
 		<a href="#">
-			<div class="col-md-4 secondarycolour box">
+			<div class="grid--4 secondarycolour box nomargin">
 				<blockquote>"The journey begins with developing mental agility, opinions, habits, self-belief and the ability to live and work with others. These are qualities that we nature and encourage here, with a focus on positive psychology."</blockquote>
 				<span class="boxlink">Eve Jardine-Young<br/>Principal</span>
 			</div>
 		</a>
 		<a href="#">
-			<div class="col-md-4 box nopad">
+			<div class="grid--4 box nopad nomargin">
 				<span class="boxlink-zoom">Jazz Festival</span>
 				<div class="imagebox-zoom"  style="background-image: url('images/stock/image72.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: right;">
 				</div>
 			</div>
 		</a>
-	</div>
 </div>
-
-
-
-
-
 <!-- footer -->
 <footer class="secondarycolour">
 			<div class="footer--logo">
@@ -204,7 +194,7 @@ $(function() {
 	//JQUERY DOM READY CHECK
 		// down arrow scroller
 		$("#downarrow").click(function(){
-			$('html, body').animate({ scrollTop: $('#tagline').offset().top }, 1000);
+			$('html, body').animate({ scrollTop: $('#tagline').offset().top -90 }, 1000);
 		});
 
 		// toggle menu
