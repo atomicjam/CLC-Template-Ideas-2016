@@ -87,55 +87,36 @@
 		</nav>
 	</div>
 	<div class="grid-sm-9">
-		<section>
+		<section class="columns">
 		<h2 id="pagecolumns">Form page test</h2>
-		<p style="max-width: 550px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<p style="max-width: 550px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<form>
 				<fieldset>
 					<legend>Your Daughters Details</legend>
-						<label>Daughter's first name*</label>
-							<input type="text" />
-						<label>Daughter's surname*</label>
-							<input type="text" />
-						<label>Present school*</label>
-							<input type="text" />
-						<label>Daughter's Date of Birth</label>
-							<input type="text" />
-						<label>Year of entry (if known)</label>
-							<input type="text" />
-						<label>We are interested in</label>
-							<input type="text" />
+						<div class="nobreak"><label>Daughter's first name*</label><input type="text" /></div>
+						<div class="nobreak"><label>Daughter's surname*</label><input type="text" /></div>
+						<div class="nobreak"><label>Present school*</label><input type="text" /></div>
+						<div class="nobreak"><label>Daughter's Date of Birth</label><input type="text" /></div>
+						<div class="nobreak"><label>Year of entry (if known)</label><input type="text" /></div>
+						<div class="nobreak"><label>We are interested in</label><input type="text" /></div>
 				</fieldset>
 				<fieldset>
 					<legend>Your Details</legend>
-						<label>Your first name*</label>
-							<input type="text" />
-						<label>Your surname*</label>
-							<input type="text" />
-						<label>Postal address*</label>
-							<textarea></textarea>
-						<label>Email address*</label>
-							<input type="email" />
-						<label>Telephone number (inc international dialing code)*</label>
-							<input type="text" />
+						<div class="nobreak"><label>Your first name*</label><input type="text" /></div>
+						<div class="nobreak"><label>Your surname*</label><input type="text" /></div>
+						<div class="nobreak"><label>Postal address*</label><textarea></textarea></div>
+						<div class="nobreak"><label>Email address*</label><input type="email" /></div>
+						<div class="nobreak"><label>Telephone number (inc international dialing code)*</label><input type="text" /></div>
 				</fieldset>
 				<fieldset>
 					<legend>Visit Details</legend>
-						<label>1st choice visit date</label>
-							<input type="text" />
-						<label>2nd choice visit date</label>
-							<input type="text" />
-						<label>Please detail below any additional dates that you are able to visit, should your preferred choices not be available.</label>
-							<input type="text" />
-						<label>Have you previously visited us? If so, please provide an approximate date.</label>
-							<input type="text" />
-						<label>Do any of your family members have connections with CLC?</label>
-							<input type="text" />
-						<label>How did you first hear about CLC?*</label>
-							<input type="text" />
-						<label>Would you like us to send you a copy of our prospectus?</label>
-							<input type="text" />
+						<div class="nobreak"><label>1st choice visit date</label><input type="text" /></div>
+						<div class="nobreak"><label>2nd choice visit date</label><input type="text" /></div>
+						<div class="nobreak"><label>Please detail below any additional dates that you are able to visit, should your preferred choices not be available.</label><input type="text" /></div>
+						<div class="nobreak"><label>Have you previously visited us? If so, please provide an approximate date.</label><input type="text" /></div>
+						<div class="nobreak"><label>Do any of your family members have connections with CLC?</label><input type="text" /></div>
+						<div class="nobreak"><label>How did you first hear about CLC?*</label><input type="text" /></div>
+						<div class="nobreak"><label>Would you like us to send you a copy of our prospectus?</label><input type="text" /></div>
 				</fieldset>
 				<button type="submit">Submit</button>
 			</form>
@@ -249,7 +230,7 @@ $(function() {
 		// pin logo and slide in menu backdrop when scrolled past point
 		$(window).scroll(function() {
 			var scroll = $(window).scrollTop();
-			if (scroll >= Math.max(document.documentElement.clientHeight / 3, window.innerHeight / 3 || 250)) {
+			if (scroll >= Math.max(document.documentElement.clientHeight / 5, window.innerHeight / 5 || 150)) {
 				$(".logo").addClass("logo--scrolled");
 				$(".menu__background").addClass("menu__background--scrolled");
 					// if menu is active hide the scrolled logo but not the large top logo

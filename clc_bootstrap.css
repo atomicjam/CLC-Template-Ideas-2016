@@ -164,6 +164,7 @@ p {
 }
 section {
   margin: 2rem 0 4rem 0;
+  max-width: 800px;
 }
 abbr {
   position: relative;
@@ -498,8 +499,8 @@ a .box {
 }
 /* FORMS */
 form {
-  max-width: 550px;
   padding: 1rem 0;
+  /*column-span: all;*/
 }
 input, textarea, button {
   background: rgba(255,255,255,0.25);
@@ -511,7 +512,7 @@ input, textarea, button {
   resize: none;
   vertical-align: bottom;
   font-size: 0.9rem;
-  max-width: 550px;
+  max-width: none;
   outline: none;
   transition: all 0.5s ease-out;
   font-weight: 300;
@@ -811,9 +812,9 @@ footer a {
   padding-top: 2rem;
 }
 .social img {
-  width: 35px;
+  width: 32px;
   height: auto;
-  margin-right: 2px;
+  margin-right: 4px;
 }
 .flex {
   display: flex;
@@ -876,14 +877,18 @@ footer a {
   float: left;
   width: 50%;
   max-width: none;
-  column-span: all;
   padding: 0 1.8rem 0 0;
 }
 .space {
   padding: 1rem;
   content:'';
 }
-
+.nobreak {
+  -webkit-page-break-inside: avoid;
+     -moz-page-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+}
 /* Minimal Grid */
 .grid {
   padding: 0;
