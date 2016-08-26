@@ -66,7 +66,7 @@ html {
   background-color: rgb(50,50,50);
 }
 body {
-  background-color: #fff;
+  background-color: rgb(50,50,50);
   font-family: 'verlag', Arial;
   color: #595959;
   font-weight: 300;
@@ -74,6 +74,9 @@ body {
   padding: 0;
   line-height: 1.3rem;
   -webkit-font-smoothing: antialiased;
+}
+.content {
+  background-color: #fff;
 }
 /* Base color classes */
 .white {
@@ -199,8 +202,11 @@ ul {
   list-style-position: inside;
   margin: 0.5rem 0;
   padding: 0.5rem 0;
-  column-span: all;
   max-width: 450px;
+  -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
+            page-break-inside: avoid;
+                 break-inside: avoid;
 }
 table {
   margin: 30px 0;
@@ -291,7 +297,7 @@ a:hover {
   padding: 0;
   margin: 0;
   font-size: 1rem;
-  height: 23vw;
+  height: auto;
   overflow: hidden;
 
 }
@@ -314,7 +320,6 @@ a:hover {
   width: 100%;
   overflow: hidden;
 }
-
 .html5video  {
   /* Make video to at least 100% wide and tall */
   min-width: 100%;
@@ -328,7 +333,6 @@ a:hover {
   left: 50%;
   transform: translate(-50%,-50%);
 }
-
 .imagebox-zoom {
   position: absolute;
   top: 0;
@@ -387,7 +391,6 @@ a .box {
   will-change: auto;
   opacity: 1;
 }
-
 .logo--scrolled {
   height: 40px;
   top: 1.5rem;
@@ -418,7 +421,7 @@ a .box {
 .tagline {
   padding: 5rem 3rem;
   width: 100%;
-  background: rgba(255,255,255,0.66);
+  background: rgba(255,255,255,1);
   font-weight: 300;
 }
 .tagline + .container-fluid .row {
@@ -432,8 +435,6 @@ a .box {
   min-height: 100vh;
   overflow: hidden;
   background-size: cover;
-  /*background-position: center;*/
-  /*background-image: url('images/stock/image2.JPG');*/
 }
 .short {
   position: relative;
@@ -749,8 +750,6 @@ nav li a:hover {
 .thirdlevel ul {
   float: none;
   width: auto;
-}
-.thirdlevel ul {
   margin: 2.7rem 0.3rem;
 }
 .thirdlevel li {
@@ -814,7 +813,7 @@ footer a {
   padding-top: 2rem;
 }
 .social img {
-  width: 33px;
+  width: 35px;
   height: auto;
   margin-right: 2px;
 }
@@ -893,8 +892,15 @@ footer a {
     width: 100%;
   }
   .search {
-    top: 4rem;
-    right: 2rem;
+    top: 4.1rem;
+    right: 2.05rem;
+  }
+  .thirdlevel ul{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  section {
+    margin-top: 0;
   }
 }
 @media (max-width: 992px) {
@@ -908,8 +914,7 @@ footer a {
 }
 /* Minimal Grid */
 .grid {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding: 0;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 0;
@@ -917,15 +922,8 @@ footer a {
   width: 100vw;
   flex-wrap: wrap;
 }
-.grid div:first-child {
-  margin-left: -2rem;
-}
-.grid div:last-child {
-  margin-right: -2rem;
-}
 .grid--1, .grid--2, .grid--3, .grid--4, .grid--5, .grid--6, .grid--7, .grid--8, .grid--9, .grid--10, .grid--11, .grid--12 {
-  padding: 0 2rem;
-  min-height: 1px;
+  padding: 2rem;
   width: 100vw;
   position: relative;
 }

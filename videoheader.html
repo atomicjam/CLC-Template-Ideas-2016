@@ -38,15 +38,15 @@
 </head>
 
 <body>
-
+<!-- hero video -->
 	<div class="banner">
 		<div class="videobox">
 			<video class="html5video" id="videotest" poster="media/poster.jpg" preload="auto" loop="true" muted="true" autoplay>
-				<source src="media/webmversion.webm" type="video/webm;">
-				<source src="media/mp4version.mp4" type="video/mp4;">
+				<source src="media/webmversion.webm" type='video/webm;codecs="vp8, vorbis"'>
+				<source src="media/mp4version.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
 			</video>
 		</div>
-
+<!-- menu system -->
 		<div class="menu__background"></div>
 		<a href="#"><img src="images/CLC_Logo_Xsmall_White.svg" class="logo" id="logo" /></a>
 		<button id="menu" class="hamburger hamburger--collapse" type="button">
@@ -72,189 +72,29 @@
 				<li><a href="page.html">Random Page</a></li>
 				<li><a href="tablepage.html">Table Page</a></li>
 				<li><a href="thirdnav.html">Third Level Nav</a></li>
-				<li><a href="videoboxes.html">Video Boxes</a></li>
 				<li><a href="videoheader.html">Video Header</a></li>
 				<li><a href="formpage.html">Form Page</a></li>
 			</ul>
 		</nav>
 		<span class="down" id="downarrow"></span>
 	</div>
-	<h1 class="tagline" id="tagline">Preparing girls for the future and their future</h1>
-
-	<div class="container-fluid wide">
-		<div class="row">
-			<a href="#">
-				<div class="col-sm-4 box nopad">
-					<span class="boxcopy-zoom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image50.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: center;">
-					</div>
-				</div>
-			</a>
-			<a href="#">
-				<div class="col-sm-4 box nopad">
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image4.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: right;">
-					</div>
-				</div>
-			</a>
-			<div class="col-sm-4 primarycolour box">
-				<blockquote>You must be shapeless, formless, like water.
-					<br />When you pour water in a cup, it becomes the cup.
-					<br />When you pour water in a bottle, it becomes the bottle.
-					<br />When you pour water in a teapot, it becomes the teapot.
-					<br />
-					<br />Water can drip and it can crash.
-					<br />Become like water my friend.</blockquote><span class="boxlink">Bruce Lee (1971)</span></div>
+<!-- body without 3rd nav-->
+	<div class="grid content" id="tagline">
+		<div class="grid--3">
+		</div>
+		<div class="grid--9">
+			<section class="columns">
+			<h2 id="pagecolumns">Heading With Page Body, No Nav, No Boxes</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h3>secondary heading in columns</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
 		</div>
 	</div>
-	<div class="container-fluid wide">
-		<div class="row">
-			<div class="col-md-4 secondarycolour box">
-				<blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-					dolor in reprehenderit."</blockquote>
-			</div>
-			<a href="#">
-				<div class="col-md-8 box nopad">
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image92.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: right;">
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
-	<div class="container-fluid wide">
-		<div class="row">
-			<a href="#">
-				<div class="col-md-8 box nopad">
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image5.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: right;">
-					</div>
-				</div>
-			</a>
-			<a href="#">
-				<div class="col-md-4 box nopad">
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image6.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: right;">
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
-	<div class="container-fluid wide">
-		<div class="row">
-			<a href="#">
-				<div class="col-md-4 box nopad">
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image7.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: right;">
-					</div>
-				</div>
-			</a>
-			<a href="#">
-				<div class="col-md-4 box nopad">
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image8.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: right;">
-					</div>
-				</div>
-			</a>
-			<a href="#">
-				<div class="col-md-4 primarycolour box">
-					<blockquote>You must be shapeless, formless, like water.
-						<br />When you pour water in a cup, it becomes the cup.
-						<br />When you pour water in a bottle, it becomes the bottle.
-						<br />When you pour water in a teapot, it becomes the teapot.
-						<br />
-						<br />Water can drip and it can crash.
-						<br />Become like water my friend.</blockquote><span class="boxlink">Bruce Lee (1971)</span></div>
-			</a>
-		</div>
-	</div>
-	<div class="container-fluid wide">
-		<div class="row">
-			<div class="col-md-4 secondarycolour box">
-				<blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-					dolor in reprehenderit."</blockquote>
-			</div>
-			<a href="#">
-				<div class="col-md-8 box nopad">
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image1.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: right;">
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
-	<div class="container-fluid wide">
-		<div class="row">
-			<a href="#">
-				<div class="col-md-4 box nopad">
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image9.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: left;">
-					</div>
-				</div>
-			</a>
-			<div class="col-md-4 primarycolour box">
-				<blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-					dolor in reprehenderit."</blockquote><span href="" class="boxlink">Lorem ipsum</span></div>
-			<a href="#">
-				<div class="col-md-4 box nopad">
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image10.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: left;">
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
-
-	<div class="container-fluid wide">
-		<div class="row">
-			<a href="#">
-				<div class="col-md-4 box nopad">
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image11.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: left;">
-					</div>
-				</div>
-			</a>
-			<a href="#">
-				<div class="col-md-4 box nopad">
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image12.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: right;">
-					</div>
-				</div>
-			</a>
-			<a href="#">
-				<div class="col-md-4 box nopad">
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image13.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: left;">
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
-	<div class="container-fluid wide">
-		<div class="row">
-			<a href="#">
-				<div class="col-md-4 box nopad">
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image14.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: left;">
-					</div>
-				</div>
-			</a>
-			<a href="#">
-				<div class="col-md-4 primarycolour box">
-					<blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-						dolor in reprehenderit."</blockquote><span href="" class="boxlink">Lorem ipsum</span></div>
-			</a>
-			<a href="#">
-				<div class="col-md-4 box nopad">
-					<span class="boxlink-zoom">Lorem ipsum</span>
-					<div class="imagebox-zoom" style="background-image: url('images/stock/image15.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.23) 76%, rgba(0,0,0,0.5) 100%);background-position: left;">
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
-
+<!-- footer -->
 	<footer class="secondarycolour">
 				<div class="footer--logo">
 					<img src="images/CLC_Logo_Xsmall_Grey.svg" style="width: 180px; height: auto;margin-top: 5px;" /><br/>
@@ -315,7 +155,7 @@
 					Registered charity #311722
 				</div>
 	</footer>
-
+<!-- scripts -->
 	<script>
 		$(function() {
 			//JQUERY DOM READY CHECK
