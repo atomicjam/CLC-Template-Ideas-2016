@@ -1006,7 +1006,20 @@ footer a {
 }
 
 /* Responsive tweaks */
+@media (max-width: 992px) {
+  .box {
+    height: 41vw;
+    min-height: 41vw;
+  }
+  #navigation {
+    width: 100vw;
+  }
+}
 @media (max-width: 768px) {
+  .box {
+    height: 60vw;
+    min-height: 60vw;
+  }
   .xs-full {
     width: 100%;
   }
@@ -1020,14 +1033,5 @@ footer a {
   }
   section {
     margin-top: 0;
-  }
-}
-@media (max-width: 992px) {
-  .box {
-    /*height: 63.139vw;
-    min-height: 63.139vw;*/
-  }
-  #navigation {
-    width: 100vw;
   }
 }
