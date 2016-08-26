@@ -716,7 +716,7 @@ button.hamburger {
   padding: 2rem;
   z-index: 99;
   transform: translateX(100%);
-  transition: all .4s ease-out;
+  transition: all .4s ease-in-out;
 }
 #navigation.is-active {
   display: block;
