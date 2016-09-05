@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Jobs test</title>
+	<title>Life at CLC test</title>
 	<meta name="subject" content="your website's subject">
 	<meta name="description" content="A description of the page">
 	<meta name="robots" content="index,follow,noodp">
@@ -38,9 +38,9 @@
 <body>
 <!-- main nav and splash image -->
 <div id="hero">
-	<div class="banner short" style="background-image: url('images/stock/jobs.jpg'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 70%, rgba(0,0,0,0.5) 100%);background-position: 75%;">
+	<div id="map" class="banner short">
 		<div class="menu__background"></div>
-		<a href="#"><img src="images/CLC_Logo_Xsmall_White.svg" class="logo" id="logo" /></a>
+		<a href="#"><img src="images/CLC_Logo_Xsmall_White.svg" class="logo" id="logo"/></a>
 		<button id="menu" class="hamburger hamburger--collapse" type="button">
 			<span class="hamburger-box">
 				<span class="hamburger-inner"></span>
@@ -72,45 +72,63 @@
 		<span class="down" id="downarrow"></span>
 	</div>
 </div>
-<!-- bodu and 3rd level nav -->
+<!-- main content and 3rd level nav -->
 <div class="grid content" id="tagline">
 	<div class="grid-sm-3">
 		<nav class="thirdlevel">
 			<ul>
-				<li><a href="">Current Vacencies</a></li>
-				<li><a href="">Living in Cheltenham</a></li>
+				<li><a href="">Bording</a></li>
+				<li><a href="">Weekends</a></li>
+				<li><a href="">Day Girls</a></li>
+				<li><a href="">Our Town</a></li>
+				<li><a href="">Pastoral Care</a></li>
+				<li><a href="">Saturday Programme</a></li>
 			</ul>
 		</nav>
 	</div>
 	<div class="grid-sm-9">
 		<section class="columns">
-		<h2 id="pagecolumns">Jobs</h2>
-		<p>Cheltenham Ladies' College is a very special place to work, employing approximately 600 staff in both teaching and non-teaching staff roles.</p>
-		<p>The main College site is situated in the centre of the beautiful Regency town of Cheltenham, with our boarding houses and sports facilities a short walk away. </p>
-		<p>As a teacher here you'll enjoy teaching motivated, intelligent girls who want to learn and you'll have access to great facilities to support teaching and learning.</p>
-		<p>Non-teaching roles at College are diverse, from Chef to Web Developer, Gardener to HR Officer.  Whatever your role, you'll benefit from being part of a large team with opportunities for development and, in many cases, the ability to work flexible hours. </p>
-		<h3>Benefits</h3>
-		<p>We are genuinely committed to our staff and endeavour to offer a range of benefits that people will value and enjoy. These include:
-		<ul>
-		<li>a contributory pension scheme;</li>
-		<li>salary sacrifice options;</li>
-		<li>membership of our Sports Centre available at minimal cost for yourself and at a reduced rate for your family - facilities include a pool, fitness suite, sports hall and squash courts;</li>
-		<li>employee helpline;</li>
-		<li>flexible hours - dependent on role;</li>
-		<li>subsidised restaurant;</li>
-		<li>training and development opportunities.</li>
-		</ul>
-		</p>
+			<h2 id="pagecolumns">Map Heading Test</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h3>secondary heading in columns</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</section>
+   <script>
+      var map;
+      function initialize() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: new google.maps.LatLng(51.8972471, -2.082346599999937),
+          mapTypeId: 'roadmap',
+					disableDefaultUI: true,
+          styles: [
+						{"featureType":"transit.station","elementType":"all","stylers":[{"visibility":"off"}]},
+						{"featureType":"road","elementType":"all","stylers":[{"visibility":"simplified"},{"weight":2}]},
+						{"featureType":"poi.attraction","elementType":"all","stylers":[{"visibility":"off"}]},
+						{"featureType":"poi.government","elementType":"all","stylers":[{"visibility":"off"}]},
+						{"featureType":"poi.medical","elementType":"all","stylers":[{"visibility":"off"}]},
+						{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},
+						{"featureType":"poi.place_of_worship","elementType":"all","stylers":[{"visibility":"on"}]},
+						{"featureType":"landscape","elementType":"all","stylers":[{"hue":"#677b6e"},{"saturation":-33},{"lightness":4}]},
+						{"featureType":"poi.park","elementType":"all","stylers":[{"saturation":-100},{"lightness":34}]}
+					]
+        });
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPAWuUSuZGBt8fDBZB6KjJLh-fxyRo8ag&callback=initialize">
+    </script>
 	</div>
 </div>
-
 <!-- 3 boxes -->
 <div class="grid">
 		<a href="#">
 			<div class="grid-sm-4 box">
-				<span class="boxlink-zoom">Enviromental Group</span>
-				<div class="imagebox-zoom"  style="background-image: url('images/stock/image65.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: left;">
+				<span class="boxlink-zoom">Whats your game face?</span>
+				<div class="imagebox-zoom"  style="background-image: url('images/stock/image61.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: 60% 50%;">
 				</div>
 			</div>
 		</a>
@@ -122,13 +140,12 @@
 		</a>
 		<a href="#">
 			<div class="grid-sm-4 box">
-				<span class="boxlink-zoom">Living in Cheltenham</span>
-				<div class="imagebox-zoom"  style="background-image: url('images/stock/image68.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: right;">
+				<span class="boxlink-zoom">Whats your game face?</span>
+				<div class="imagebox-zoom"  style="background-image: url('images/stock/image62.JPG'), radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.5) 100%);background-position: right;">
 				</div>
 			</div>
 		</a>
 </div>
-
 <!-- footer -->
 <footer class="secondarycolour">
 			<div class="footer--logo">
@@ -196,7 +213,7 @@ $(function() {
 	//JQUERY DOM READY CHECK
 		// down arrow scroller
 		$("#downarrow").click(function(){
-			$('html, body').animate({ scrollTop: $('#tagline').offset().top -90 }, 1000);
+			$('html, body').animate({ scrollTop: $('#tagline').offset().top -90}, 1000);
 		});
 
 		// toggle menu
@@ -208,6 +225,7 @@ $(function() {
 			// hide logo if viewport scrolled
 			$(".logo--scrolled").toggleClass("ninja");
 		});
+
 
 		// pin logo and slide in menu backdrop when scrolled past point
 		$(window).scroll(function() {
