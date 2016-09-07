@@ -98,10 +98,17 @@
 		<style>
 			#cards {
 				width: 100%;
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
-				align-items: flex-start;
-				justify-content: flex-start;
-				flex-wrap: wrap;
+				-webkit-box-align: start;
+				    -ms-flex-align: start;
+				        align-items: flex-start;
+				-webkit-box-pack: start;
+				    -ms-flex-pack: start;
+				        justify-content: flex-start;
+				-ms-flex-wrap: wrap;
+				    flex-wrap: wrap;
 				background: white;
 				overflow-x: hidden;
 				overflow-y: scroll;
@@ -110,7 +117,8 @@
 				width: 32%;
 				height: 300px;
 				position: relative;
-				perspective: 500px;
+				-webkit-perspective: 500px;
+				        perspective: 500px;
 				will-change: transform;
 				margin: 0.2rem;
 			}
@@ -120,14 +128,23 @@
 				position: absolute;
 				width: 100%;
 				height: 100%;
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
-				flex-wrap: wrap;
-				align-items: center;
-				justify-content: center;
+				-ms-flex-wrap: wrap;
+				    flex-wrap: wrap;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
 				overflow: auto;
+				-webkit-transition: all 0.8s ease-in-out;
 				transition: all 0.8s ease-in-out;
 				will-change: transform;
 				border-radius: 2px;
+				outline: none;
 			}
 			.card button {
 				position: absolute;
@@ -141,7 +158,10 @@
 				cursor: pointer;
 			}
 			.front {
-				align-items: flex-end;
+				-webkit-box-align: end;
+				    -ms-flex-align: end;
+				            -ms-grid-row-align: flex-end;
+				        align-items: flex-end;
 				background: #ddd;
 				color: #FFF;
 				z-index: 0;
@@ -167,12 +187,16 @@
 				color: white;
 			}
 			.back {
-				align-items: flex-start;
+				-webkit-box-align: start;
+				    -ms-flex-align: start;
+				            -ms-grid-row-align: flex-start;
+				        align-items: flex-start;
 				padding: 1rem 2rem;
 				background-color: #758e88;
 				color: #FFF;
 				z-index: -1;
-				transform: rotateX(-180deg);
+				-webkit-transform: rotateX(-180deg);
+				        transform: rotateX(-180deg);
 			}
 			.back h1 {
 				text-align: left;
@@ -183,10 +207,12 @@
 				background-color: #444;
 			}
 			.flip-front {
-				transform: rotateX(-180deg);
+				-webkit-transform: rotateX(-180deg);
+				        transform: rotateX(-180deg);
 			}
 			.flip-back {
-				transform: rotateX(-360deg);
+				-webkit-transform: rotateX(-360deg);
+				        transform: rotateX(-360deg);
 			}
 		</style>
 		<div id="cards">
