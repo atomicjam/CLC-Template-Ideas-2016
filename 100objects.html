@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basic Page test</title>
+	<meta name="subject" content="your website's subject">
+	<meta name="description" content="A description of the page">
+	<meta name="robots" content="index,follow,noodp">
+	<!-- All Search Engines -->
+	<meta name="googlebot" content="index,follow">
+	<!-- Google Specific -->
+	<link rel="copyright" href="copyright.html">
+	<link rel="author" href="humans.txt">
+	<!-- For IE 10 and below -->
+	<!-- No link, just place a file called favicon.ico in the root directory -->
+	<!-- For IE 11, Chrome, Firefox, Safari, Opera -->
+	<link rel="icon" href="images/icon16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="images/icon32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="images/icon48.png" sizes="48x48" type="image/png">
+	<link rel="icon" href="images/icon62.png" sizes="62x62" type="image/png">
+	<link rel="icon" href="images/icon192.png" sizes="192x192" type="image/png">
+	<!-- edge/windows 10 tile config -->
+	<meta name="msapplication-config" content="ieconfig.xml" />
+	<!-- apple touch icons -->
+	<link rel="apple-touch-icon" href="images/icon60.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icon76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icon120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icon152.png">
+	<!-- normalize html elements -->
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+	<!-- clc-bootstrap loosly based off twitter bootstrap -->
+	<link rel="stylesheet" href="clc_bootstrap.css" />
+	<!-- cdn Jquery will be local copy and bottom of page in final -->
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- main nav and splash image -->
+<div id="hero">
+	<div class="banner short" style="background-image: url('images/stock/image55.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 70%, rgba(0,0,0,0.5) 100%);background-position: 75% 100%;">
+		<div class="menu__background"></div>
+		<a href="#"><img src="images/CLC_Logo_Xsmall_White.svg" class="logo" id="logo" /></a>
+		<button id="menu" class="hamburger hamburger--collapse" type="button">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+		<nav id="navigation">
+			<a href="#"><img src="images/Search.svg" class="search" id="search" /></a>
+			<ul>
+				<li><a href="index.html">Landing Page</a></li>
+				<li>&mdash;</li>
+				<li><a href="aboutclc.html">About CLC</a></li>
+				<li><a href="admissions.html">Admissions</a></li>
+				<li><a href="lifeatclc.html">Life at CLC</a></li>
+				<li><a href="academic.html">Academic</a></li>
+				<li><a href="cocurricular.html">Co-Curricular</a></li>
+				<li>&mdash;</li>
+				<li><a href="keyinformation.html">Key Information</a></li>
+				<li><a href="jobs.html">Jobs</a></li>
+			</ul>
+			<ul>
+				<li><a href="page.html">Random Page</a></li>
+				<li><a href="tablepage.html">Table Page</a></li>
+				<li><a href="thirdnav.html">Third Level Nav</a></li>
+				<li><a href="videoheader.html">Video Header</a></li>
+				<li><a href="formpage.html">Form Page</a></li>
+				<li><a href="maps.html">Map Page</a></li>
+				<li><a href="100objects.html">100 Objects Page</a></li>
+			</ul>
+		</nav>
+		<span class="down" id="downarrow"></span>
+	</div>
+</div>
+<!-- body without 3rd nav-->
+<div class="grid content" id="tagline">
+	<div class="grid-sm-3">
+		<nav class="thirdlevel">
+			<ul>
+				<li><a href="">Overview</a></li>
+				<li><a href="">Music</a></li>
+				<li><a href="">Sport</a></li>
+				<li><a href="">Creative</a></li>
+				<li><a href="">Departmental</a></li>
+				<li><a href="">Other</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="grid-sm-9">
+		<section>
+		<h2 id="pagecolumns">College in one hundred objects</h2>
+		<p>To celebrate our landmark 160th anniversary, we are undertaking various projects to highlight the legacy of this extraordinary institution.  These projects have brought together pupils, Guild and staff in shared tribute to our distinctive values and atmosphere.</p>
+		<p>This particular project brings together the collection of items, places and even animals that make up 'College in 100 Objects'. Our grateful thanks go out to all those who have shared their stories in order to create this compilation of treasured memories; there were many more submitted than we could use. I do hope that you find this collection as interesting, varied, rich and evocative as I do. </p>
+		<p>Eve Jardine-Young (1990)</p>
+		<p>Principal</p>
+
+		<style>
+			#cards {
+				width: 100%;
+				display: flex;
+				align-items: flex-start;
+				justify-content: flex-start;
+				flex-wrap: wrap;
+				background: white;
+				overflow-x: hidden;
+				overflow-y: scroll;
+			}
+			.card {
+				width: 32%;
+				height: 300px;
+				position: relative;
+				perspective: 500px;
+				will-change: transform;
+				margin: 0.2rem;
+			}
+			.front, .back {
+				backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+				overflow: auto;
+				transition: all 0.8s ease-in-out;
+				will-change: transform;
+				border-radius: 2px;
+			}
+			.card button {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: none;
+				border: none;
+				text-indent: -10000px;
+				cursor: pointer;
+			}
+			.front {
+				align-items: flex-end;
+				background: #ddd;
+				color: #FFF;
+				z-index: 0;
+				background-blend-mode: multiply;
+				-webkit-background-blend-mode: multiply;
+			}
+			.front h1 {
+				font-weight: 300;
+			}
+			.card h1, .card h2 {
+				font-size: 19px;
+				margin: 1rem 2rem;
+				text-align: right;
+				width: 100%;
+				text-transform: uppercase;
+				color: white;
+			}
+			.card p {
+				display: inline-block;
+				width: 100%;
+				font-size: 0.9rem;
+				line-height: 1.3rem;
+				color: white;
+			}
+			.back {
+				align-items: flex-start;
+				padding: 1rem 2rem;
+				background-color: #758e88;
+				color: #FFF;
+				z-index: -1;
+				transform: rotateX(-180deg);
+			}
+			.back h1 {
+				text-align: left;
+				margin: 1rem 0 0 0;
+				padding: 0;
+			}
+			.card:nth-child(2n+1) .back {
+				background-color: #444;
+			}
+			.flip-front {
+				transform: rotateX(-180deg);
+			}
+			.flip-back {
+				transform: rotateX(-360deg);
+			}
+		</style>
+		<div id="cards">
+
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-image: url('images/100objects/amp.jpg'),linear-gradient(to bottom, rgba(0,0,0,0), rgba(55,50,50,0.3));background-size: cover;background-position: 50% 50%;">
+		      <h1>Amphitheatre</h1>
+		      <button>Flip card</button>
+		    </div>
+		    <div class="back" tabindex="-1">
+		      <h1>Amphitheatre</h1>
+		      <p>The amphitheatre was built in the Quad with funds donated by Guild. Fifty tonnes of stone, the original Quadrangle cobblestones and four cube crown quercus trees were used in the building project. Mrs Mary Blackburn, Chairman of Guild, opened it on 8 May 2004.</p>
+		      <p>"When I arrived at College, it had only recently been built and the Queen then unveiled a plaque in that quad in the first year I was here. In my time here, it has been used as a playground for Lower College break, somewhere to take group photos and somewhere for musicians to perform. It is also very good at collecting rainwater!"</p>
+		      <p>Becky Revell, Staff</p>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-image: url('images/100objects/arc.jpg'),linear-gradient(to bottom, rgba(0,0,0,0), rgba(55,50,50,0.3));background-size: cover;background-position: 50% 50%;">
+		      <h1>Archives</h1>
+		      <button>Flip card</button>
+		    </div>
+		    <div class="back" tabindex="-1">
+		      <h1>Archives</h1>
+		      <p>"Having been fortunate enough to work with the Archives staff during the past two years, I have seen a rare glimpse into the history of College, almost since its inception. The Department stores a wealth of historic items, from Victorian science slides, through to original registers taken in class, to trunks, uniform, CLC china, Miss Beale's writing desk, photographs of staff, and far more. The Archives Department truly reflects the spirit, history and essence of College during its lifetime."</p>
+		      <p>Ruth Armstrong, Staff</p>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-image: url('images/100objects/art.jpg'),linear-gradient(to bottom, rgba(0,0,0,0), rgba(55,50,50,0.3));background-size: cover;background-position: 50% 50%;">
+		      <h1>Art Department</h1>
+		      <button>Flip card</button>
+		    </div>
+		    <div class="back" tabindex="-1">
+		      <h1>Art Department</h1>
+		      <p>"The best place by 100 miles was the art department."</p>
+		      <p>Willa Hilditch, 2013</p>
+		      <p>Guild member Amanda Wakeley opened the Fauconberg Art Wing in 1999, replacing Fauconberg House, latterly a Sixth Form Boarding House. This new art block enabled College to house all Art & Technology activities together, which had not been possible before.</p>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-image: url('images/100objects/badges.jpg'),linear-gradient(to bottom, rgba(0,0,0,0), rgba(55,50,50,0.3));background-size: cover;background-position: 50% 50%;">
+		      <h1>Badges</h1>
+		      <button>Flip card</button>
+		    </div>
+		    <div class="back" tabindex="-1">
+		      <h1>Badges</h1>
+		      <p>Badges are given to all prefects, as well as some members of sports teams and societies. These are displayed with pride on College jumpers.</p>
+		      <p>"Different badges are a demonstration of everyone's strengths and the diversity of the talents here at College. Badges are a part of who we are!"</p>
+		      <p>Alexandra Beukers, LC3</p>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-color: #758e88;">
+		      <h1>Banda Machine &amp; Banda Sheets</h1>
+		      <button>Flip card</button>
+		    </div>
+		    <div class="back" tabindex="-1">
+		      <h1>Banda Machine &amp; Banda Sheets</h1>
+		      <p>"I don't know if we have a Banda machine lurking somewhere but I do have some of the sheets with purple printing - sadly they don't smell now but they are in varying degrees of legibility depending whether they were run off at the start or the end of a run! Girls and staff here before photocopying became common will remember:</p>
+		      <p>The smell of the banda fluid - as soon as you received your sheet you sniffed it and, if it had just been run off, it was still wet and smelt of the fluid so you were lucky - wonderful! There was no health and safety in those days!</p>
+		      <p>Staff will remember purple fingers from the "carbon" sheet, which you had to fix into the Banda (it often took many tries to get it right as you would put the master on the drum the wrong way round and print onto the drum not the paper!), or from the newly run off sheets.</p>
+		      <p>If you made a mistake on the master, you had to cross it out or start again!</p>
+		      <p>If we were lucky, we were able to produce multi-coloured sheets by slipping in another coloured "carbon" sheet for diagrams.</p>
+		      <p>When photocopying became commonplace in the 80s, I remember being told as a member of staff that we should use bandas as much as possible as it was cheaper than photocopying."</p>
+		      <p>Debbie Vass, Staff</p>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-image: url('images/100objects/hatherley.jpg'),linear-gradient(to bottom, rgba(0,0,0,0), rgba(55,50,50,0.3));background-size: cover;background-position: 50% 50%;">
+		      <h1>Basement cloakroom at Hatherley</h1>
+		      <button>Flip card</button>
+		    </div>
+		    <div class="back" tabindex="-1">
+		      <h1>Basement cloakroom at Hatherley</h1>
+		      <p>"The basement cloakroom at Hatherley, where in the lower forms we spent hours in the evening shining our shoes ready to be inspected, and where we talked incessantly, and much of our formative conversations took place."</p>
+		      <p>Patricia Dunlop (Williams), 1971</p>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-image: url('images/100objects/bathing.jpg'),linear-gradient(to bottom, rgba(0,0,0,0), rgba(55,50,50,0.3));background-size: cover;background-position: 50% 50%;">
+		      <h1>Bathing costume</h1>
+		      <button>Flip card</button>
+		    </div>
+		    <div class="back" tabindex="-1">
+		      <h1>Bathing costume</h1>
+		      <p>"Green woollen bathing costumes with white stripes which could be taken off once a certain distance in the swimming pool was achieved."</p>
+		      <p>Elizabeth Tanner (Bennett), 1962</p>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-image: url('images/100objects/blazer.jpg'),linear-gradient(to bottom, rgba(0,0,0,0), rgba(55,50,50,0.3));background-size: cover;background-position: 50% 50%;">
+		      <h1>Blazer</h1>
+		      <button>Flip card</button>
+		    </div>
+		    <div class="back" tabindex="-1">
+		      <h1>Blazer</h1>
+		      <p>"The colour of the blazer really stands out and represents the college to me, especially that we (SFC1s) are all required to wear one. Without the blazer a big part of the uniform seems to be lacking, and it loses its representativeness of College."</p>
+		      <p>Pearl Tam, SFC1</p>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-image: url('images/100objects/blueslip.jpg'),linear-gradient(to bottom, rgba(0,0,0,0), rgba(55,50,50,0.3));background-size: cover;background-position: 50% 50%;">
+		      <h1>Blue late detention slip</h1>
+		      <button>Flip card</button>
+		    </div>
+		    <div class="back" tabindex="-1">
+		      <h1>Blue late detention slip</h1>
+		      <p>Nominated by Isobel McGrigor, SFC2</p>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-image: url('images/100objects/bookie.jpg'),linear-gradient(to bottom, rgba(0,0,0,0), rgba(55,50,50,0.3));background-size: cover;background-position: 50% 50%;">
+		      <h1>Bookie</h1>
+		      <button>Flip card</button>
+		    </div>
+		    <div class="back" tabindex="-1">
+		      <h1>Bookie</h1>
+		      <p>Bookstation: College's emporium of stationery, greeting cards and gifts, affectionately known as 'Bookie'.</p>
+		      <p>"Bookie! Thank you Bookie for always supplying me with colourful stickers, pens, badges and much more."</p>
+		      <p>Lea Pensoy, UC5</p>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+
+
+		  <script>
+		  $(function() {
+		    $("button").click(function() {
+		      $(this).parent(".front").toggleClass("flip-front").siblings(".back").toggleClass("flip-back");
+		      $(this).parent(".back").toggleClass("flip-back").siblings(".front").toggleClass("flip-front");
+		      return false;
+		    });
+		  });
+		  </script>
+		</div>
+
+
+
+		</section>
+	</div>
+</div>
+<!-- footer -->
+<footer class="secondarycolour">
+			<div class="footer--logo">
+				<img src="images/CLC_Logo_Xsmall_Grey.svg" style="width: 180px; height: auto;margin-top: 5px;" /><br/>
+				<div class="social">
+					<a href=""><img src="images/facebook.svg" title="facebook" /></a>
+					<a href=""><img src="images/twitter.svg" title="twitter" /></a>
+					<a href=""><img src="images/instagram.svg" title="instagram" /></a>
+					<a href=""><img src="images/linkedin.svg" title="linkedin" /></a>
+					<a href=""><img src="images/youtube.svg" title="youtube" /></a>
+				</div>
+			</div>
+			<div class="flex">
+			<ul>
+				<li><a href="">Joining CLC</a></li>
+				<li><a href="">Quick Guide</a></li>
+				<li><a href="">Day/Boarding</a></li>
+				<li><a href="">Admissions</a></li>
+				<li><a href="">At A Glance</a></li>
+				<li><a href="">Feeder Schools</a></li>
+				<li><a href="">Academic</a></li>
+				<li><a href="">Forms</a></li>
+			</ul>
+				<ul>
+					<li><a href="">About CLC</a></li>
+					<li><a href="">Principal's Weclome</a></li>
+					<li><a href="">Our Purpose</a></li>
+					<li><a href="">College In 100 Objects</a></li>
+				</ul>
+				<ul>
+					<li><a href="">Key Info</a></li>
+					<li><a href="">Term Dates</a></li>
+					<li><a href="">Fees</a></li>
+					<li><a href="">Policies</a></li>
+					<li><a href="">Open Days</a></li>
+				</ul>
+				<ul>
+					<li><a href="">CLC Community</a></li>
+					<li><a href="">Social Media</a></li>
+					<li><a href="">Jobs</a></li>
+					<li><a href="">Support Us</a></li>
+					<li><a href="">Our Town</a></li>
+					<li><a href="">Hire</a></li>
+					<li><a href="">Society &amp; Clubs</a></li>
+					<li><a href="">Pastoral</a></li>
+					<li><a href="">Wellbeing</a></li>
+				</ul>
+				<ul>
+					<li><a href="">News</a></li>
+					<li><a href="">Recent News</a></li>
+					<li><a href="">Festivals</a></li>
+					<li><a href="">College In Press</a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<hr />
+				Cheltenham Ladies College &copy; 2016. All rights reserved<br />
+				<a href="">Legal notices &amp; cookie policy</a><br />
+				Registered charity #311722
+			</div>
+</footer>
+
+<script>
+$(function() {
+	//JQUERY DOM READY CHECK
+		// down arrow scroller
+		$("#downarrow").click(function(){
+			$('html, body').animate({ scrollTop: $('#tagline').offset().top -90}, 1000);
+		});
+
+		// toggle menu
+		$("#menu").click(function() {
+			// toggle class is-active to fire css3 animation and translation
+			$("#menu, #navigation").toggleClass("is-active");
+			// hide menu background off screen
+			$(".menu__background").toggleClass("offscreen");
+			// hide logo if viewport scrolled
+			$(".logo--scrolled").toggleClass("ninja");
+		});
+
+
+		// pin logo and slide in menu backdrop when scrolled past point
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			if (scroll >= Math.max(document.documentElement.clientHeight / 5, window.innerHeight / 5 || 150)) {
+				$(".logo").addClass("logo--scrolled");
+				$(".menu__background").addClass("menu__background--scrolled");
+					// if menu is active hide the scrolled logo but not the large top logo
+					if ($("#menu").hasClass("is-active")) {
+						$(".logo--scrolled").addClass("ninja");
+					}
+
+			} else {
+				$(".logo--scrolled").removeClass("ninja");
+				$(".logo").removeClass("logo--scrolled");
+				$(".menu__background").removeClass("menu__background--scrolled");
+			}
+		});
+	// end dom ready check
+});
+</script>
+</body>
+</html>
