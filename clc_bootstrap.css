@@ -497,6 +497,24 @@ a .box {
   height: auto;
   padding: 2rem 0.5rem 0 0;
 }
+/* council */
+.bio {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bio div {
+  width: 33%;
+  padding: 1rem;
+}
+.bio h4 {
+  min-height: 220px;
+}
+.bio img {
+  width: 100%;
+  height: auto;
+}
+
+
 /* FORMS */
 form {
   padding: 1rem 0;
@@ -841,11 +859,11 @@ footer a {
 @media (min-width: 900px) {
   .footer--logo {
     width: 25%;
-    width: 32.5%;
+    width: 28%;
   }
   .flex {
     width: 75%;
-    width: 66.5%;
+    width: 72%;
     justify-content: flex-start;
   }
 }

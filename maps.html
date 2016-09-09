@@ -68,6 +68,7 @@
 				<li><a href="formpage.html">Form Page</a></li>
 				<li><a href="maps.html">Map Page</a></li>
 				<li><a href="100objects.html">100 Objects Page</a></li>
+				<li><a href="council.html">Bio/Council Page</a></li>
 			</ul>
 		</nav>
 		<span class="down" id="downarrow"></span>
@@ -88,10 +89,11 @@
 		</nav>
 	</div>
 	<div class="grid-sm-9">
-		<section class="columns">
+		<section>
 			<h2 id="pagecolumns">Map Heading Test</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div id="mapembed" style="width: 100%;height:300px;"></div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<h3>secondary heading in columns</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -99,8 +101,26 @@
 		</section>
    <script>
       var map;
+			var map2;
       function initialize() {
         map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: new google.maps.LatLng(51.8972471, -2.082346599999937),
+          mapTypeId: 'roadmap',
+					disableDefaultUI: true,
+          styles: [
+						{"featureType":"transit.station","elementType":"all","stylers":[{"visibility":"off"}]},
+						{"featureType":"road","elementType":"all","stylers":[{"visibility":"simplified"},{"weight":2}]},
+						{"featureType":"poi.attraction","elementType":"all","stylers":[{"visibility":"off"}]},
+						{"featureType":"poi.government","elementType":"all","stylers":[{"visibility":"off"}]},
+						{"featureType":"poi.medical","elementType":"all","stylers":[{"visibility":"off"}]},
+						{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},
+						{"featureType":"poi.place_of_worship","elementType":"all","stylers":[{"visibility":"on"}]},
+						{"featureType":"landscape","elementType":"all","stylers":[{"hue":"#677b6e"},{"saturation":-33},{"lightness":4}]},
+						{"featureType":"poi.park","elementType":"all","stylers":[{"saturation":-100},{"lightness":34}]}
+					]
+        });
+				map2 = new google.maps.Map(document.getElementById('mapembed'), {
           zoom: 16,
           center: new google.maps.LatLng(51.8972471, -2.082346599999937),
           mapTypeId: 'roadmap',
