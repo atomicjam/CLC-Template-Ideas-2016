@@ -60,16 +60,22 @@
 				<li>&mdash;</li>
 				<li><a href="keyinformation.html">Key Information</a></li>
 				<li><a href="jobs.html">Jobs</a></li>
-			</ul>
-			<ul>
-				<li><a href="page.html">Random Page</a></li>
-				<li><a href="tablepage.html">Table Page</a></li>
-				<li><a href="teachingatclc.html">Teaching at CLC</a></li>
-				<li><a href="videoheader.html">Video Header</a></li>
-				<li><a href="formpage.html">Form Page</a></li>
-				<li><a href="maps.html">Map Page</a></li>
-				<li><a href="100objects.html">100 Objects Page</a></li>
-				<li><a href="council.html">Bio/Council Page</a></li>
+				<li>&mdash;</li>
+				<li><button type="button" class="navbutton--secondlevel">Button</button></li>
+				<li><button type="button" class="navbutton--secondlevel">Button</button></li>
+				<li><button type="button" class="navbutton--secondlevel">Button</button></li>
+				<li><button type="button" class="navbutton--secondlevel">UX Test</button>
+					<ul class="secondlevel">
+						<li><a href="page.html">Random Page</a></li>
+						<li><a href="tablepage.html">Table Page</a></li>
+						<li><a href="teachingatclc.html">Teaching at CLC</a></li>
+						<li><a href="videoheader.html">Video Header</a></li>
+						<li><a href="formpage.html">Form Page</a></li>
+						<li><a href="maps.html">Map Page</a></li>
+						<li><a href="100objects.html">100 Objects Page</a></li>
+						<li><a href="council.html">Bio/Council Page</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 		<span class="down" id="downarrow"></span>
@@ -231,6 +237,13 @@
 				$(".menu__background").toggleClass("offscreen");
 				// hide logo if viewport scrolled
 				$(".logo--scrolled").toggleClass("ninja");
+			});
+
+			// toggle second level menu
+			$(".navbutton--secondlevel").click(function() {
+				$(this).toggleClass("navbutton--selected");
+				$(this).next("ul").toggleClass("secondlevel--active");
+				$("#navigation button").toggleClass("navbutton--inactive");
 			});
 
 			// pin logo and slide in menu backdrop when scrolled past point

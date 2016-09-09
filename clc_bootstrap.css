@@ -763,6 +763,37 @@ nav li a {
 nav li a:hover {
   color: #677b6e;
 }
+.navbutton--secondlevel {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.2rem 0;
+  color: white;
+  text-align: left;
+  float:none;
+  font-size: 1rem;
+}
+.navbutton--secondlevel:hover {
+  color: #677b6e;
+}
+.navbutton--inactive {
+  color: #555;
+}
+.navbutton--selected {
+  color: #fff;
+}
+.secondlevel {
+  position: relative;
+  margin: 0;
+  top: -1.9rem;
+  left: 100%;
+  width: auto;
+  height: 0;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+.secondlevel--active {
+  opacity: 1;
+}
 
 .thirdlevel ul {
   float: none;
