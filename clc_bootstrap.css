@@ -735,6 +735,7 @@ button.hamburger {
   z-index: 99;
   transform: translateX(100%);
   transition: all .4s ease-in-out;
+  will-change: all;
 }
 #navigation.is-active {
   display: block;
@@ -772,6 +773,7 @@ nav li a:hover {
   float:none;
   font-size: 1rem;
   transition: all .5s ease-in-out;
+  will-change: all;
 }
 .navbutton--secondlevel:hover {
   color: #677b6e;
@@ -792,6 +794,7 @@ nav li a:hover {
   opacity: 0;
   transition: all .5s ease-in-out;
   width: 100%;
+  visibility: hidden;
 }
 .secondlevel li {
   margin: 0;
@@ -800,6 +803,7 @@ nav li a:hover {
 }
 .secondlevel--active {
   opacity: 1;
+  visibility: visible;
 }
 .thirdlevel ul {
   float: none;
