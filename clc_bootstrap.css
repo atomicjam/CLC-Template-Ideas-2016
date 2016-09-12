@@ -765,6 +765,9 @@ nav li a {
 nav li a:hover {
   color: #677b6e;
 }
+nav button {
+  background-color: transparent;
+}
 .navbutton--secondlevel {
   text-transform: uppercase;
   margin: 0;
