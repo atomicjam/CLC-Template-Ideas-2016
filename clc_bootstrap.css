@@ -736,6 +736,7 @@ button.hamburger {
   transform: translateX(100%);
   transition: all .4s ease-in-out;
   will-change: all;
+  overflow: scroll;
 }
 #navigation.is-active {
   display: block;
@@ -949,6 +950,9 @@ footer a {
      -moz-page-break-inside: avoid;
           page-break-inside: avoid;
                break-inside: avoid;
+}
+.noscroll {
+  overflow: hidden;
 }
 /* Minimal Grid */
 .grid {

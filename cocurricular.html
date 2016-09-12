@@ -286,6 +286,8 @@ $(function() {
 			$(".menu__background").toggleClass("offscreen");
 			// hide logo if viewport scrolled
 			$(".logo--scrolled").toggleClass("ninja");
+			// stop body scroll when menu open
+			$("body").toggleClass("noscroll");
 		});
 
 		// toggle second level menu
