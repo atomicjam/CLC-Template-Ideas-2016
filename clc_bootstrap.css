@@ -771,6 +771,7 @@ nav li a:hover {
   text-align: left;
   float:none;
   font-size: 1rem;
+  transition: all .5s ease-in-out;
 }
 .navbutton--secondlevel:hover {
   color: #677b6e;
@@ -779,7 +780,7 @@ nav li a:hover {
   color: #555;
 }
 .navbutton--selected {
-  color: #fff;
+  color: rgb(123, 143, 130);
 }
 .secondlevel {
   position: relative;
@@ -789,12 +790,17 @@ nav li a:hover {
   width: auto;
   height: 0;
   opacity: 0;
-  transition: all .4s ease-in-out;
+  transition: all .5s ease-in-out;
+  width: 100%;
+}
+.secondlevel li {
+  margin: 0;
+  padding: 0.3rem 0;
+  line-height: 1.1rem;
 }
 .secondlevel--active {
   opacity: 1;
 }
-
 .thirdlevel ul {
   float: none;
   width: auto;
