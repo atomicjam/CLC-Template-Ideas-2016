@@ -772,7 +772,7 @@ nav button {
   text-transform: uppercase;
   margin: 0;
   padding: 0.2rem 0;
-  color: white;
+  color: #fff;
   text-align: left;
   float:none;
   font-size: 1rem;
@@ -780,13 +780,13 @@ nav button {
   will-change: all;
 }
 .navbutton--secondlevel:hover {
-  color: #677b6e;
+  color: rgb(123, 143, 130);
 }
 .navbutton--inactive {
-  color: #555;
+  color: #777;
 }
 .navbutton--selected {
-  color: rgb(123, 143, 130);
+  color: #fff;
 }
 .secondlevel {
   position: relative;
