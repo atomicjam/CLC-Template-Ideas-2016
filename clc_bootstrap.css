@@ -918,12 +918,12 @@ footer a {
 /* notices */
 #notice {
   position: absolute;
-  top: 150px;
+  top: 15vh;
   left: 0;
   background: rgba(0,0,0,0.6);
   display: block;
   width: 480px;
-  padding: 2.5rem;
+  padding: 0 2.5rem;
   transform: translateX(-100%);
   transition: all .5s ease-in-out;
   will-change: transform;
@@ -932,30 +932,34 @@ footer a {
   color: #fff;
 }
 #notice--toggle {
-  display: block;
-  background: rgba(255,0,0,0.2);
-  border: 1px solid white;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  top: 150px;
-  left: 0;
-  margin-left: 2.5rem;
-  margin-top: 1.5rem;
+  top: 0;
+  left: 480px;
+  margin-left: 0;
+  margin-top: 0;
   cursor: pointer;
-  border-radius: 50% 50% 50% 50%;
-  height: 50px;
-  width: 50px;
-  -webkit-animation: wiggle 2s infinite;
-  -moz-animation: wiggle 2s infinite;
-  -o-animation: wiggle 2s infinite;
-  animation: wiggle 2s infinite;
-
+  border-radius: 0 0 0 0;
+  transform: rotate(90deg) translateY(-100%);
+  transform-origin: top left;
+  border-bottom: 1px solid rgba(115,130,120,0.95);
+}
+#notice--toggle p {
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 #notice--toggle p {
   padding: 0;
-  margin: 0.55rem 1.1rem;
+  margin: 0.9rem 1.2rem;
   color: #fff;
-  font-size: 1.4rem;
-  font-weight: 400;
+  font-size: 0.8rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  -webkit-animation: wiggle 5s infinite;
+  -moz-animation: wiggle 5s infinite;
+  -o-animation: wiggle 5s infinite;
+  animation: wiggle 5s infinite;
 }
 .notice--active {
   transform: translateX(0%) !important;
