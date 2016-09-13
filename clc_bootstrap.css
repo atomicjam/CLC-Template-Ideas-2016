@@ -918,7 +918,7 @@ footer a {
 /* notices */
 #notice {
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   left: 0;
   background: rgba(0,0,0,0.6);
   display: block;
