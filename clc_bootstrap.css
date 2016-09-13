@@ -922,7 +922,7 @@ footer a {
   left: 0;
   background: rgba(0,0,0,0.6);
   display: block;
-  width: 500px;
+  width: 480px;
   padding: 2.5rem;
   transform: translateX(-100%);
   transition: all .5s ease-in-out;
