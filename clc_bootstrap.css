@@ -918,11 +918,11 @@ footer a {
 /* notices */
 #notice {
   position: absolute;
-  top: 14vh;
+  top: 200px;
   left: 0;
   background: rgba(0,0,0,0.6);
   display: block;
-  width: 30vw;
+  width: 500px;
   padding: 2.5rem;
   transform: translateX(-100%);
   transition: all .5s ease-in-out;
@@ -936,8 +936,8 @@ footer a {
   background: rgba(255,0,0,0.2);
   border: 1px solid white;
   position: absolute;
-  top: 14vh;
-  left: 0vw;
+  top: 200px;
+  left: 0;
   margin-left: 2.5rem;
   margin-top: 1.5rem;
   cursor: pointer;
