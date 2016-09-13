@@ -777,7 +777,7 @@ nav button {
   float:none;
   font-size: 1rem;
   /* font size scale */
-  font-size: 1.16vw;
+  /*font-size: 1.16vw; */
   transition: all .5s ease-in-out;
   will-change: all;
 }
@@ -915,6 +915,51 @@ footer a {
   }
 }
 /* end footer styles */
+/* notices */
+#notice {
+  position: absolute;
+  top: 14vh;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+  display: block;
+  width: 30vw;
+  padding: 2.5rem;
+  transform: translateX(-100%);
+  transition: all .5s ease-in-out;
+  will-change: transform;
+}
+#notice h2, #notice p {
+  color: #fff;
+}
+#notice--toggle {
+  display: block;
+  background: rgba(255,0,0,0.2);
+  border: 1px solid white;
+  position: absolute;
+  top: 14vh;
+  left: 0vw;
+  margin-left: 2.5rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  border-radius: 50% 50% 50% 50%;
+  height: 50px;
+  width: 50px;
+  -webkit-animation: wiggle 2s infinite;
+  -moz-animation: wiggle 2s infinite;
+  -o-animation: wiggle 2s infinite;
+  animation: wiggle 2s infinite;
+
+}
+#notice--toggle p {
+  padding: 0;
+  margin: 0.55rem 1.1rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.notice--active {
+  transform: translateX(0%) !important;
+}
 /* error pages */
 #error {
   position: absolute;
@@ -1104,6 +1149,88 @@ footer a {
     transform: translate3d(0,-4px,0);
   }
 }
+
+@-ms-keyframes wiggle {
+  0% {
+    -ms-transform:rotate(0deg);
+  }
+  80% {
+    -ms-transform:rotate(0deg);
+  }
+  85% {
+    -ms-transform:rotate(-6deg);
+  }
+  90% {
+    -ms-transform:rotate(6deg);
+  }
+  95% {
+    -ms-transform:rotate(-6deg);
+  }
+  100% {
+    -ms-transform:rotate(6deg);
+  }
+}
+@-moz-keyframes wiggle {
+  0% {
+    -moz-transform:rotate(0deg);
+  }
+  80% {
+    -moz-transform:rotate(0deg);
+  }
+  85% {
+    -moz-transform:rotate(-6deg);
+  }
+  90% {
+    -moz-transform:rotate(6deg);
+  }
+  95% {
+    -moz-transform:rotate(-6deg);
+  }
+  100% {
+    -moz-transform:rotate(6deg);
+  }
+}
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform:rotate(0deg);
+  }
+  80% {
+    -webkit-transform:rotate(0deg);
+  }
+  85% {
+    -webkit-transform:rotate(-6deg);
+  }
+  90% {
+    -webkit-transform:rotate(6deg);
+  }
+  95% {
+    -webkit-transform:rotate(-6deg);
+  }
+  100% {
+    -webkit-transform:rotate(6deg);
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform:rotate(0deg);
+  }
+  80% {
+    transform:rotate(0deg);
+  }
+  85% {
+    transform:rotate(-6deg);
+  }
+  90% {
+    transform:rotate(6deg);
+  }
+  95% {
+    transform:rotate(-6deg);
+  }
+  100% {
+    transform:rotate(6deg);
+  }
+}
+
 
 /* Responsive tweaks */
 @media (max-width: 992px) {

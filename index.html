@@ -161,6 +161,17 @@
 				</li>
 			</ul>
 		</nav>
+
+		<div id="notice" class="notice--active">
+			<section>
+				<h2>Important Notice</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+		</div>
+		<div id="notice--toggle">
+			<p>!</p>
+		</div>
+
 		<span class="down" id="downarrow"></span>
 	</div>
 	<h1 class="tagline" id="tagline">Preparing girls for the future and their future</h1>
@@ -322,6 +333,10 @@
 				$(".logo--scrolled").toggleClass("ninja");
 				// stop body scroll when menu open
 				$("body").toggleClass("noscroll");
+			});
+
+			$("#notice--toggle").click(function() {
+				$("#notice").toggleClass("notice--active");
 			});
 
 			// toggle second level menu
