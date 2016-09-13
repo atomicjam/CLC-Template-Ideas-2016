@@ -776,6 +776,8 @@ nav button {
   text-align: left;
   float:none;
   font-size: 1rem;
+  /* font size scale */
+  font-size: 1.16vw;
   transition: all .5s ease-in-out;
   will-change: all;
 }
@@ -913,6 +915,27 @@ footer a {
   }
 }
 /* end footer styles */
+/* error pages */
+#error {
+  position: absolute;
+  top: 15vh;
+  left: 10vh;
+  width: 40vw;
+}
+
+#error h1 {
+  color: #fff;
+  font-size: 12rem;
+  line-height: 12rem;
+  text-align: left;
+}
+#error p {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: left;
+}
+
 /* HELPER CLASSES */
 .clearfix {
   clear: both;
@@ -956,6 +979,10 @@ footer a {
 }
 .noscroll {
   overflow: hidden;
+}
+.textfillviewport {
+  font-size: calc(4vw + 4vh + 2vmin);
+  line-height: calc(1.2em + 1vw);
 }
 /* Minimal Grid */
 .grid {
