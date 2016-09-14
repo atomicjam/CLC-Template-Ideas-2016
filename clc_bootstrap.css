@@ -980,6 +980,29 @@ footer a {
   line-height: 2rem;
   text-align: left;
 }
+/* digital sign */
+#digitalsign {
+  position: absolute;
+  top: 15vh;
+  left: 3vh;
+  width: 50vw;
+  height: 80vh;
+}
+
+#digitalsign h1 {
+  color: #fff;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: left;
+}
+#digitalsign p {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: left;
+}
+
+
 
 /* HELPER CLASSES */
 .clearfix {

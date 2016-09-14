@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basic Page test</title>
+	<meta name="subject" content="your website's subject">
+	<meta name="description" content="A description of the page">
+	<meta name="robots" content="index,follow,noodp">
+	<!-- All Search Engines -->
+	<meta name="googlebot" content="index,follow">
+	<!-- Google Specific -->
+	<link rel="copyright" href="copyright.html">
+	<link rel="author" href="humans.txt">
+	<!-- For IE 10 and below -->
+	<!-- No link, just place a file called favicon.ico in the root directory -->
+	<!-- For IE 11, Chrome, Firefox, Safari, Opera -->
+	<link rel="icon" href="images/icon16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="images/icon32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="images/icon48.png" sizes="48x48" type="image/png">
+	<link rel="icon" href="images/icon62.png" sizes="62x62" type="image/png">
+	<link rel="icon" href="images/icon192.png" sizes="192x192" type="image/png">
+	<!-- edge/windows 10 tile config -->
+	<meta name="msapplication-config" content="ieconfig.xml" />
+	<!-- apple touch icons -->
+	<link rel="apple-touch-icon" href="images/icon60.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icon76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icon120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icon152.png">
+	<!-- normalize html elements -->
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+	<!-- clc-bootstrap loosly based off twitter bootstrap -->
+	<link rel="stylesheet" href="clc_bootstrap.css" />
+	<!-- cdn Jquery will be local copy and bottom of page in final -->
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- main nav and splash image -->
+<div id="hero">
+	<div class="banner" style="background-image: url('images/stock/image30.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 70%, rgba(0,0,0,0.5) 100%);background-position: 100% 100%;">
+		<div class="menu__background"></div>
+		<a href="#"><img src="images/CLC_Logo_Xsmall_White.svg" class="logo" id="logo" /></a>
+		<div id="digitalsign">
+			<h1>Digital Sign Title</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+</div>
+
+<script>
+$(function() {
+	//JQUERY DOM READY CHECK
+		// down arrow scroller
+		$("#downarrow").click(function(){
+			$('html, body').animate({ scrollTop: $('#tagline').offset().top -90}, 1000);
+		});
+
+		// toggle menu
+		$("#menu").click(function() {
+			// toggle class is-active to fire css3 animation and translation
+			$("#menu, #navigation").toggleClass("is-active");
+			// hide menu background off screen
+			$(".menu__background").toggleClass("offscreen");
+			// hide logo if viewport scrolled
+			$(".logo--scrolled").toggleClass("ninja");
+			// stop body scroll when menu open
+			$("body").toggleClass("noscroll");
+		});
+
+		// toggle second level menu
+		$(".navbutton--secondlevel").click(function() {
+			if($(this).hasClass("navbutton--selected")) {
+				// remove classes to hide menu
+				$(".secondlevel--active").removeClass("secondlevel--active");
+				$(".navbutton--inactive").removeClass("navbutton--inactive");
+				$(".navbutton--selected").removeClass("navbutton--selected");
+			} else {
+				// reset menu state
+				$(".secondlevel--active").removeClass("secondlevel--active");
+				$(".navbutton--inactive").removeClass("navbutton--inactive");
+				$(".navbutton--selected").removeClass("navbutton--selected");
+				// add classes to trigger css animations
+				$(this).addClass("navbutton--selected");
+				$(this).next("ul").addClass("secondlevel--active");
+				$(".navbutton--secondlevel").addClass("navbutton--inactive");
+			}
+		});
+
+		// pin logo and slide in menu backdrop when scrolled past point
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			if (scroll >= Math.max(document.documentElement.clientHeight / 5, window.innerHeight / 5 || 150)) {
+				$(".logo").addClass("logo--scrolled");
+				$(".menu__background").addClass("menu__background--scrolled");
+					// if menu is active hide the scrolled logo but not the large top logo
+					if ($("#menu").hasClass("is-active")) {
+						$(".logo--scrolled").addClass("ninja");
+					}
+
+			} else {
+				$(".logo--scrolled").removeClass("ninja");
+				$(".logo").removeClass("logo--scrolled");
+				$(".menu__background").removeClass("menu__background--scrolled");
+			}
+		});
+	// end dom ready check
+});
+</script>
+</body>
+</html>
