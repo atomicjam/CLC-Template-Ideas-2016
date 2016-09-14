@@ -943,7 +943,7 @@ footer a {
   border-radius: 0 0 0 0;
   transform: rotate(90deg) translateY(-100%);
   transform-origin: top left;
-  border-bottom: 1px solid rgba(115,130,120,0.95);
+  min-width: 140px;
 }
 #notice--toggle p {
   break-inside: avoid;
