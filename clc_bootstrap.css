@@ -956,10 +956,6 @@ footer a {
   font-size: 0.8rem;
   font-weight: 200;
   text-transform: uppercase;
-  -webkit-animation: wiggle 5s infinite;
-  -moz-animation: wiggle 5s infinite;
-  -o-animation: wiggle 5s infinite;
-  animation: wiggle 5s infinite;
 }
 .notice--active {
   transform: translateX(0%) !important;
