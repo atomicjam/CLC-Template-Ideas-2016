@@ -1280,4 +1280,8 @@ footer a {
   section {
     margin-top: 0;
   }
+  #notice {
+    width: 90%;
+    top: 25vh;
+  }
 }
