@@ -1281,6 +1281,10 @@ footer a {
     margin-top: 0;
   }
   #notice {
-    width: 50vw;
+    width: 80vw;
+    top: 30vh;
+  }
+  #notice--toggle {
+    left: 80vw;
   }
 }
