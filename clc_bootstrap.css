@@ -736,23 +736,28 @@ button.hamburger {
   transform: translateX(100%);
   transition: all .4s ease-in-out;
   will-change: all;
-  overflow: scroll;
 }
 #navigation.is-active {
   display: block;
   transform: translateX(0%);
 }
+#menu--area {
+  margin-top: 15vh;
+  height: calc(85vh - 4rem);
+  overflow: auto;
+}
 nav ul {
   padding: 0;
-  margin: 25vh 0 0 0;
+  margin: 0 0 0 0;
   float: left;
   width: 50%;
+  height: 100%;
   list-style-type: none;
 }
 nav li {
   text-transform: uppercase;
   margin: 0;
-  padding: 0.2rem 0 0.2rem 15%;
+  padding: 0.2rem 0 0.2rem 25%;
   color: white;
 }
 nav li:before {
@@ -776,8 +781,6 @@ nav button {
   text-align: left;
   float:none;
   font-size: 1rem;
-  /* font size scale */
-  /*font-size: 1.16vw; */
   transition: all .5s ease-in-out;
   will-change: all;
 }
@@ -793,12 +796,13 @@ nav button {
 .secondlevel {
   position: relative;
   margin: 0;
-  top: -1.85rem;
+  top: -1.7rem;
   left: 110%;
   width: auto;
   height: 0;
   opacity: 0;
-  transition: all .5s ease-in-out;
+  transition: height 0.5s ease-in, opacity 0.5s ease-in;
+  /*transition: all .5s ease-in-out;*/
   width: 100%;
   visibility: hidden;
 }
@@ -825,6 +829,43 @@ nav button {
   color: #677b6e;
   font-size: 0.9rem;
 }
+@media (max-width: 600px) {
+  #menu--area {
+    margin-top: 18vh;
+    height: calc(82vh - 4rem);
+  }
+  nav ul {
+    width: 100%;
+  }
+  nav li {
+    padding-left: 0;
+  }
+  .secondlevel {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  .secondlevel li {
+    padding: 0.6rem 0;
+  }
+  .secondlevel--active {
+    height: auto;
+  }
+  #notice--toggle {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media (max-width: 1025px) and (orientation: landscape) {
+  nav li {
+    padding-left: 0;
+  }
+  nav ul {
+    width: 45%;
+  }
+}
+
 /* footer styles  */
 footer {
   display: flex;
