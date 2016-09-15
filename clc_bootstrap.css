@@ -1281,7 +1281,6 @@ footer a {
     margin-top: 0;
   }
   #notice {
-    width: 90%;
-    top: 25vh;
+    width: 50vw;
   }
 }
