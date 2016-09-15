@@ -1282,7 +1282,7 @@ footer a {
   }
   #notice {
     width: 80vw;
-    top: 30vh;
+    top: 25vh;
     z-index: 200;
   }
   #notice--toggle {
