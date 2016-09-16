@@ -847,7 +847,7 @@ nav button {
     left: 0;
   }
   .secondlevel li {
-    padding: 0.6rem 0;
+    padding: 0.6rem 0 0.6rem 1.5rem;
   }
   .secondlevel--active {
     height: auto;
