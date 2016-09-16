@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Parent hub test</title>
+	<meta name="subject" content="your website's subject">
+	<meta name="description" content="A description of the page">
+	<meta name="robots" content="index,follow,noodp">
+	<!-- All Search Engines -->
+	<meta name="googlebot" content="index,follow">
+	<!-- Google Specific -->
+	<link rel="copyright" href="copyright.html">
+	<link rel="author" href="humans.txt">
+	<!-- For IE 10 and below -->
+	<!-- No link, just place a file called favicon.ico in the root directory -->
+	<!-- For IE 11, Chrome, Firefox, Safari, Opera -->
+	<link rel="icon" href="images/icon16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="images/icon32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="images/icon48.png" sizes="48x48" type="image/png">
+	<link rel="icon" href="images/icon62.png" sizes="62x62" type="image/png">
+	<link rel="icon" href="images/icon192.png" sizes="192x192" type="image/png">
+	<!-- edge/windows 10 tile config -->
+	<meta name="msapplication-config" content="ieconfig.xml" />
+	<!-- apple touch icons -->
+	<link rel="apple-touch-icon" href="images/icon60.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icon76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icon120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icon152.png">
+	<!-- normalize html elements -->
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+	<!-- clc-bootstrap loosly based off twitter bootstrap -->
+	<link rel="stylesheet" href="clc_bootstrap.css" />
+	<!-- cdn Jquery will be local copy and bottom of page in final -->
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- main nav and splash image -->
+<div id="hero">
+	<div class="banner short" style="background-image: url('images/stock/image19.JPG'),radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 70%, rgba(0,0,0,0.5) 100%);background-position: 75% 100%;">
+		<div class="menu__background"></div>
+		<a href="#"><img src="images/CLC_Logo_Xsmall_White.svg" class="logo" id="logo" /></a>
+		<button id="menu" class="hamburger hamburger--collapse" type="button">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+		<nav id="navigation">
+			<a href="search.html"><img src="images/Search.svg" class="search" id="search" /></a>
+			<div id="menu--area">
+				<ul>
+					<li><button type="button" class="navbutton--secondlevel">Joining CLC</button>
+						<ul class="secondlevel">
+							<li><a href="index.html">Home</a></li>
+							<li>&mdash;</li>
+							<li><a href="page.html">Random Page</a></li>
+							<li><a href="tablepage.html">Table Page</a></li>
+							<li><a href="teachingatclc.html">Teaching at CLC</a></li>
+							<li><a href="videoheader.html">Video Header</a></li>
+							<li><a href="formpage.html">Form Page</a></li>
+							<li><a href="maps.html">Map Page</a></li>
+							<li><a href="100objects.html">100 Objects Page</a></li>
+							<li><a href="council.html">Bio/Council Page</a></li>
+							<li><a href="404.html">404 error</a></li>
+							<li><a href="digitalsign.html">digital sign</a></li>
+						</ul>
+					</li>
+					<li>&mdash;</li>
+					<li><button type="button" class="navbutton--secondlevel">About CLC</button>
+						<ul class="secondlevel">
+							<li><a href="aboutclc.html">Overview</a></li>
+							<li><a href="page.html">Principal's Welcome</a></li>
+							<li><a href="page.html">Our Purpose</a></li>
+							<li><a href="page.html">College in one hundred Objects</a></li>
+						</ul>
+					</li>
+					<li><button type="button" class="navbutton--secondlevel">Admissions</button>
+						<ul class="secondlevel">
+							<li><a href="admissions.html">Overview</a></li>
+							<li><a href="page.html">LOWER COLLEGE ENTRY</a></li>
+							<li><a href="page.html">UPPER COLLEGE ENTRY</a></li>
+							<li><a href="page.html">SIXTH FORM ENTRY</a></li>
+							<li><a href="page.html">DAY GIRLS AT CLC</a></li>
+							<li><a href="page.html">VISIT/OPEN DAYS</a></li>
+							<li><a href="page.html">SCHOLARSHIPS</a></li>
+							<li><a href="page.html">BURSARIES</a></li>
+							<li><a href="page.html">FAQ</a></li>
+						</ul>
+					</li>
+					<li><button type="button" class="navbutton--secondlevel">LIFE AT CLC</button>
+						<ul class="secondlevel">
+							<li><a href="lifeatclc.html">Overview</a></li>
+							<li><a href="page.html">BOARDING</a></li>
+							<li><a href="page.html">WEEKENDS</a></li>
+							<li><a href="page.html">DAY GIRLS</a></li>
+							<li><a href="page.html">OUR TOWN</a></li>
+							<li><a href="page.html">PASTORAL CARE</a></li>
+							<li><a href="page.html">SATURDAY PROGRAMME</a></li>
+						</ul>
+					</li>
+					<li><button type="button" class="navbutton--secondlevel">Academic</button>
+						<ul class="secondlevel">
+							<li><a href="academic.html">Overview</a></li>
+							<li><a href="page.html">DEPARTMENTS</a></li>
+							<li><a href="page.html">PROFESSIONAL GUIDANCE</a></li>
+							<li><a href="page.html">SIXTH FORM</a></li>
+							<li><a href="page.html">HIGHER EDUCATION</a></li>
+							<li><a href="page.html">EXAM RESULTS</a></li>
+							<li><a href="page.html">LIBRARY AND ARCHIVES</a></li>
+						</ul>
+					</li>
+					<li><button type="button" class="navbutton--secondlevel">Co-Curricular</button>
+						<ul class="secondlevel">
+							<li><a href="cocurricular.html">Overview</a></li>
+							<li><a href="page.html">SOCIETIES &amp; CLUBS</a></li>
+							<li><a href="page.html">THE ARTS</a></li>
+							<li><a href="page.html">SPORTS</a></li>
+							<li><a href="page.html">OUTDOOR EDUCATION</a></li>
+							<li><a href="page.html">COMMUNITY LINKS</a></li>
+							<li><a href="page.html">SOCIAL RESPONSIBILITY</a></li>
+						</ul>
+					</li>
+					<li>&mdash;</li>
+					<li><button type="button" class="navbutton--secondlevel">Key Information</button>
+						<ul class="secondlevel">
+							<li><a href="keyinformation.html">Overview</a></li>
+							<li><a href="page.html">CONTACT</a></li>
+							<li><a href="page.html">INSPECTION REPORT</a></li>
+							<li><a href="page.html">FIND US</a></li>
+							<li><a href="page.html">POLICIES</a></li>
+							<li><a href="page.html">TERM DATES</a></li>
+							<li><a href="page.html">GOVERNANCE</a></li>
+							<li><a href="page.html">FEES</a></li>
+							<li><a href="page.html">VENUE HIRE</a></li>
+						</ul>
+					</li>
+					<li><a href="http://flourish.cheltladiescollege.org" class="navbutton--secondlevel" target="_new">Support Us</a></li>
+					</li>
+					<li><button type="button" class="navbutton--secondlevel">News</button>
+						<ul class="secondlevel">
+							<li><a href="page.html">RECENT NEWS</a></li>
+							<li><a href="page.html">COLLEGE IN THE PRESS</a></li>
+							<li><a href="page.html">CHELTENHAM FESTIVALS</a></li>
+							<li><a href="page.html">PRINCIPAL'S REFLECTIONS</a></li>
+						</ul>
+					</li>
+					<li><button type="button" class="navbutton--secondlevel">Jobs</button>
+						<ul class="secondlevel">
+							<li><a href="jobs.html">overview</a></li>
+							<li><a href="page.html">CURRENT VACANCIES</a></li>
+							<li><a href="page.html">LIVING IN CHELTENHAM</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<span class="down" id="downarrow"></span>
+	</div>
+</div>
+<!-- body without 3rd nav-->
+<div class="grid content" id="tagline">
+	<div class="grid-sm-3">
+	</div>
+	<div class="grid-sm-9">
+		<section>
+		<h2 id="pagecolumns">Welcome to the parent hub</h2>
+		<p>Here you will find a range of useful information in one place.  This includes links to our sports fixtures site, our school uniform supplier and the Secure Parent Portal.  You'll also find recent College news, photo galleries and information about upcoming events.</p>
+		<p>The Secure Parent Portal requires a login and contains the calendar and your daughter's records, including her timetable, reports, exam arrangements and results.</p>
+
+
+		<style>
+			#cards {
+				width: 100%;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: start;
+				    -ms-flex-align: start;
+				        align-items: flex-start;
+				-webkit-box-pack: start;
+				    -ms-flex-pack: start;
+				        justify-content: flex-start;
+				-ms-flex-wrap: wrap;
+				    flex-wrap: wrap;
+				background: white;
+				overflow-x: hidden;
+				overflow-y: scroll;
+			}
+			.card {
+				width: 32%;
+				height: 300px;
+				position: relative;
+				-webkit-perspective: 500px;
+				        perspective: 500px;
+				will-change: transform;
+				margin: 0 3px 3px 0;
+			}
+			.front, .back {
+				backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-wrap: wrap;
+				    flex-wrap: wrap;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				overflow: auto;
+				-webkit-transition: all 0.8s ease-in-out;
+				transition: all 0.8s ease-in-out;
+				will-change: transform;
+				border-radius: 0px;
+				outline: none;
+				-webkit-overflow-scrolling: touch;
+			}
+			.card button {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: none;
+				border: none;
+				text-indent: -10000px;
+				cursor: pointer;
+			}
+			.front {
+				-webkit-box-align: end;
+				    -ms-flex-align: end;
+				            -ms-grid-row-align: flex-end;
+				        align-items: flex-end;
+				background: #ddd;
+				color: #FFF;
+				z-index: 0;
+				background-blend-mode: multiply;
+				-webkit-background-blend-mode: multiply;
+			}
+			.front h1 {
+				font-weight: 300;
+			}
+			.card h1, .card h2 {
+				font-size: 19px;
+				margin: 1rem 2rem;
+				text-align: right;
+				width: 100%;
+				text-transform: uppercase;
+				color: white;
+			}
+			.card p {
+				display: inline-block;
+				width: 100%;
+				font-size: 0.9rem;
+				line-height: 1.3rem;
+				color: white;
+			}
+			.back {
+				-webkit-box-align: start;
+				    -ms-flex-align: start;
+				            -ms-grid-row-align: flex-start;
+				        align-items: flex-start;
+				padding: 1rem 2rem;
+				background-color: #758e88;
+				color: #FFF;
+				z-index: -1;
+				-webkit-transform: rotateX(-180deg);
+				        transform: rotateX(-180deg);
+				-ms-overflow-style: none;
+			}
+			.back h1 {
+				text-align: left;
+				margin: 1rem 0 0 0;
+				padding: 0;
+			}
+			.card:nth-child(2n+1) .back {
+				background-color: #444;
+			}
+			.flip-front {
+				-webkit-transform: rotateX(-180deg);
+				        transform: rotateX(-180deg);
+			}
+			.flip-back {
+				-webkit-transform: rotateX(-360deg);
+				        transform: rotateX(-360deg);
+			}
+
+			@media (max-width: 992px) {
+				.card {
+					width: 48%;
+				}
+			}
+			@media (max-width: 767px) {
+				.card {
+					width: 100%;
+				}
+			}
+
+
+
+		</style>
+		<div id="cards">
+
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-color: #758e88;">
+		      <h1>Secure Parent Portal</h1>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-color: #758e88;">
+		      <h1>Parent's Events</h1>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-color: #758e88;">
+		      <h1>Recent News</h1>
+		      <button>Flip card</button>
+		    </div>
+			</div>
+
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-color: #758e88;">
+		      <h1>Term Dates</h1>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-color: #758e88;">
+		      <h1>Sports Fixtures</h1>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-color: #758e88;">
+		      <h1>College Uniform</h1>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-color: #758e88;">
+		      <h1>Film and Photo Galleries</h1>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-color: #758e88;">
+		      <h1>Exams</h1>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-color: #758e88;">
+		      <h1>Professional Guidance Centre</h1>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+
+		  <div class="card">
+		    <div class="front" tabindex="-1" style="background-color: #758e88;">
+		      <h1>CLC on social media</h1>
+		      <button>Flip card</button>
+		    </div>
+		  </div>
+
+			<div class="card">
+				<div class="front" tabindex="-1" style="background-color: #758e88;">
+					<h1>School Notices</h1>
+					<button>Flip card</button>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="front" tabindex="-1" style="background-color: #758e88;">
+					<h1>Publications</h1>
+					<button>Flip card</button>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="front" tabindex="-1" style="background-color: #758e88;">
+					<h1>Parents' Society</h1>
+					<button>Flip card</button>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="front" tabindex="-1" style="background-color: #758e88;">
+					<h1>Contact Us</h1>
+					<button>Flip card</button>
+				</div>
+			</div>
+
+
+
+
+
+		  <script>
+		  $(function() {
+		    $("button").click(function() {
+		      $(this).parent(".front").toggleClass("flip-front").siblings(".back").toggleClass("flip-back");
+		      $(this).parent(".back").toggleClass("flip-back").siblings(".front").toggleClass("flip-front");
+		      return false;
+		    });
+		  });
+		  </script>
+		</div>
+
+
+
+		</section>
+	</div>
+</div>
+<!-- footer -->
+<footer class="secondarycolour">
+			<div class="footer--logo">
+				<img src="images/CLC_Logo_Xsmall_Grey.svg" style="width: 180px; height: auto;margin-top: 5px;" /><br/>
+				<div class="social">
+					<a href=""><img src="images/facebook.svg" title="facebook" /></a>
+					<a href=""><img src="images/twitter.svg" title="twitter" /></a>
+					<a href=""><img src="images/instagram.svg" title="instagram" /></a>
+					<a href=""><img src="images/linkedin.svg" title="linkedin" /></a>
+					<a href=""><img src="images/youtube.svg" title="youtube" /></a>
+				</div>
+			</div>
+			<div class="flex">
+			<ul>
+				<li><a href="">Joining CLC</a></li>
+				<li><a href="">Quick Guide</a></li>
+				<li><a href="">Day/Boarding</a></li>
+				<li><a href="">Admissions</a></li>
+				<li><a href="">At A Glance</a></li>
+				<li><a href="">Feeder Schools</a></li>
+				<li><a href="">Academic</a></li>
+				<li><a href="">Forms</a></li>
+			</ul>
+				<ul>
+					<li><a href="">About CLC</a></li>
+					<li><a href="">Principal's Weclome</a></li>
+					<li><a href="">Our Purpose</a></li>
+					<li><a href="">College In 100 Objects</a></li>
+				</ul>
+				<ul>
+					<li><a href="">Key Info</a></li>
+					<li><a href="">Term Dates</a></li>
+					<li><a href="">Fees</a></li>
+					<li><a href="">Policies</a></li>
+					<li><a href="">Open Days</a></li>
+				</ul>
+				<ul>
+					<li><a href="">CLC Community</a></li>
+					<li><a href="">Social Media</a></li>
+					<li><a href="">Jobs</a></li>
+					<li><a href="">Support Us</a></li>
+					<li><a href="">Our Town</a></li>
+					<li><a href="">Hire</a></li>
+					<li><a href="">Society &amp; Clubs</a></li>
+					<li><a href="">Pastoral</a></li>
+					<li><a href="">Wellbeing</a></li>
+				</ul>
+				<ul>
+					<li><a href="">News</a></li>
+					<li><a href="">Recent News</a></li>
+					<li><a href="">Festivals</a></li>
+					<li><a href="">College In Press</a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<hr />
+				Cheltenham Ladies College &copy; 2016. All rights reserved<br />
+				<a href="">Legal notices &amp; cookie policy</a><br />
+				Registered charity #311722
+			</div>
+</footer>
+
+<script>
+$(function() {
+	//JQUERY DOM READY CHECK
+		// down arrow scroller
+		$("#downarrow").click(function(){
+			$('html, body').animate({ scrollTop: $('#tagline').offset().top -90}, 1000);
+		});
+
+		// toggle menu
+		$("#menu").click(function() {
+			// toggle class is-active to fire css3 animation and translation
+			$("#menu, #navigation").toggleClass("is-active");
+			// hide menu background off screen
+			$(".menu__background").toggleClass("offscreen");
+			// hide logo if viewport scrolled
+			$(".logo--scrolled").toggleClass("ninja");
+			// stop body scroll when menu open
+			$("body").toggleClass("noscroll");
+		});
+
+		// toggle second level menu
+		$(".navbutton--secondlevel").click(function() {
+			if($(this).hasClass("navbutton--selected")) {
+				// remove classes to hide menu
+				$(".secondlevel--active").removeClass("secondlevel--active");
+				$(".navbutton--inactive").removeClass("navbutton--inactive");
+				$(".navbutton--selected").removeClass("navbutton--selected");
+			} else {
+				// reset menu state
+				$(".secondlevel--active").removeClass("secondlevel--active");
+				$(".navbutton--inactive").removeClass("navbutton--inactive");
+				$(".navbutton--selected").removeClass("navbutton--selected");
+				// add classes to trigger css animations
+				$(this).addClass("navbutton--selected");
+				$(this).next("ul").addClass("secondlevel--active");
+				$(".navbutton--secondlevel").addClass("navbutton--inactive");
+			}
+		});
+
+		// pin logo and slide in menu backdrop when scrolled past point
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			if (scroll >= Math.max(document.documentElement.clientHeight / 5, window.innerHeight / 5 || 150)) {
+				$(".logo").addClass("logo--scrolled");
+				$(".menu__background").addClass("menu__background--scrolled");
+					// if menu is active hide the scrolled logo but not the large top logo
+					if ($("#menu").hasClass("is-active")) {
+						$(".logo--scrolled").addClass("ninja");
+					}
+
+			} else {
+				$(".logo--scrolled").removeClass("ninja");
+				$(".logo").removeClass("logo--scrolled");
+				$(".menu__background").removeClass("menu__background--scrolled");
+			}
+		});
+	// end dom ready check
+});
+</script>
+</body>
+</html>
