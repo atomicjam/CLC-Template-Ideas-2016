@@ -796,7 +796,7 @@ nav button {
 .secondlevel {
   position: relative;
   margin: 0;
-  top: -1.7rem;
+  top: -2.1rem;
   left: 110%;
   width: auto;
   height: 0;
@@ -808,8 +808,8 @@ nav button {
 }
 .secondlevel li {
   margin: 0;
-  padding: 0.3rem 0;
-  line-height: 1.1rem;
+  padding: 0.5rem 0;
+  line-height: 1.2rem;
 }
 .secondlevel--active {
   opacity: 1;
