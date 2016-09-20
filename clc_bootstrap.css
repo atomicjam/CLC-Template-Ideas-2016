@@ -1026,15 +1026,13 @@ nav button {
   background-size: cover;
   background-blend-mode: multiply;
   -webkit-background-blend-mode: multiply;
-
-  align-content: flex-end;
 }
 .tile h1 {
   font-size: 19px;
   text-align: right;
   width: 100%;
   text-transform: uppercase;
-  color: white;
+  color: #fff;
   font-weight: 300;
   padding: 2rem;
 }
@@ -1043,7 +1041,7 @@ nav button {
   text-align: right;
   width: 100%;
   text-transform: none;
-  color: white;
+  color: #fff;
   font-weight: 200;
   padding: 0 2rem;
   margin: 0;
@@ -1058,9 +1056,6 @@ nav button {
     width: 100%;
   }
 }
-
-
-
 /* footer styles  */
 footer {
   display: flex;
