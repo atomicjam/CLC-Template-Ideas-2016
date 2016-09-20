@@ -999,6 +999,72 @@ nav button {
     width: 100%;
   }
 }
+
+.key--heading {
+  font-size: 0.6rem;
+  text-align: right;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  margin-top: 2.95rem;
+}
+.key--list li:before {
+  content: "";
+}
+.key--list li {
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+}
+.key--meeting {
+  background: linear-gradient(to bottom right, rgba(60, 47, 133, 1), rgb(22,13,73));
+}
+.key--drama {
+  background: linear-gradient(to bottom right, rgba(113, 148, 198, 1), rgba(48, 96, 164, 1));
+}
+.key--music {
+  background: linear-gradient(to bottom right, rgba(113, 154, 144, 1), rgb(80,112,104));
+}
+.key--parents {
+  background: linear-gradient(to bottom right, rgba(255, 193, 124, 1), rgba(232, 148, 52, 1));
+}
+.key--pgc {
+  background: linear-gradient(to bottom right, rgba(171, 123, 160, 1), rgba(131, 61, 116, 1));
+}
+.key--talks {
+  background: linear-gradient(to bottom right, rgba(202, 101, 96, 1), rgba(154, 57, 51, 1));
+}
+.key--sport {
+  background: linear-gradient(to bottom right, rgba(157, 204, 217, 1), rgba(0, 158, 172, 1));
+}
+.card .date {
+  position: absolute;
+  top: 1.5rem;
+  right: 0rem;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  margin: 0;
+  color: #fff;
+  text-align: left;
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+.date:after {
+  content : " ";
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 1.3rem;
+  width: 1.5rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid #fff;
+}
+
+.front.key--meeting h1, .front.key--drama h1, .front.key--music h1, .front.key--parents h1, .front.key--pgc h1, .front.key--talks h1, .front.key--sport h1 {
+  text-align: left;
+  font-weight: 200;
+}
+
 /* 2d tiles */
 #tiles {
   width: 100%;
