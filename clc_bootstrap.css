@@ -999,6 +999,67 @@ nav button {
     width: 100%;
   }
 }
+/* 2d tiles */
+#tiles {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+.tile {
+  width: 32%;
+  height: 300px;
+  position: relative;
+  margin: 0 3px 3px 0;
+  background-size: cover;
+  background-blend-mode: multiply;
+  -webkit-background-blend-mode: multiply;
+
+  align-content: flex-end;
+}
+.tile h1 {
+  font-size: 19px;
+  text-align: right;
+  width: 100%;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 300;
+  padding: 2rem;
+}
+.tile p {
+  font-size: 18px;
+  text-align: right;
+  width: 100%;
+  text-transform: none;
+  color: white;
+  font-weight: 200;
+  padding: 0 2rem;
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .tile {
+    width: 48%;
+  }
+}
+@media (max-width: 767px) {
+  .tile {
+    width: 100%;
+  }
+}
+
+
 
 /* footer styles  */
 footer {
