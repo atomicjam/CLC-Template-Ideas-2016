@@ -812,6 +812,7 @@ nav button {
   line-height: 1.2rem;
 }
 .secondlevel--active {
+  padding-top: 0.5rem;
   opacity: 1;
   visibility: visible;
 }
