@@ -451,6 +451,8 @@ a .box {
   -moz-animation: bounce 2s infinite;
   -o-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
   cursor: pointer;
   -webkit-filter: drop-shadow(0px 7px 5px rgba(30,30,30,0.5));
   padding: 1rem;
@@ -1468,87 +1470,6 @@ footer a {
   90% {
     -webkit-transform: translate3d(0,-4px,0);
     transform: translate3d(0,-4px,0);
-  }
-}
-
-@-ms-keyframes wiggle {
-  0% {
-    -ms-transform:rotate(0deg);
-  }
-  80% {
-    -ms-transform:rotate(0deg);
-  }
-  85% {
-    -ms-transform:rotate(-6deg);
-  }
-  90% {
-    -ms-transform:rotate(6deg);
-  }
-  95% {
-    -ms-transform:rotate(-6deg);
-  }
-  100% {
-    -ms-transform:rotate(6deg);
-  }
-}
-@-moz-keyframes wiggle {
-  0% {
-    -moz-transform:rotate(0deg);
-  }
-  80% {
-    -moz-transform:rotate(0deg);
-  }
-  85% {
-    -moz-transform:rotate(-6deg);
-  }
-  90% {
-    -moz-transform:rotate(6deg);
-  }
-  95% {
-    -moz-transform:rotate(-6deg);
-  }
-  100% {
-    -moz-transform:rotate(6deg);
-  }
-}
-@-webkit-keyframes wiggle {
-  0% {
-    -webkit-transform:rotate(0deg);
-  }
-  80% {
-    -webkit-transform:rotate(0deg);
-  }
-  85% {
-    -webkit-transform:rotate(-6deg);
-  }
-  90% {
-    -webkit-transform:rotate(6deg);
-  }
-  95% {
-    -webkit-transform:rotate(-6deg);
-  }
-  100% {
-    -webkit-transform:rotate(6deg);
-  }
-}
-@keyframes wiggle {
-  0% {
-    transform:rotate(0deg);
-  }
-  80% {
-    transform:rotate(0deg);
-  }
-  85% {
-    transform:rotate(-6deg);
-  }
-  90% {
-    transform:rotate(6deg);
-  }
-  95% {
-    transform:rotate(-6deg);
-  }
-  100% {
-    transform:rotate(6deg);
   }
 }
 
