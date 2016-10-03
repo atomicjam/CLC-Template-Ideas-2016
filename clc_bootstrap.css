@@ -447,10 +447,10 @@ a .box {
   position: absolute;
   bottom: 4rem;
   left: calc(50vw - 2rem);
-  -webkit-animation: bounce 2s infinite;
-  -moz-animation: bounce 2s infinite;
-  -o-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s 3;
+  -moz-animation: bounce 2s 3;
+  -o-animation: bounce 2s 3;
+  animation: bounce 2s 3;
   -webkit-animation-delay: 10s;
   animation-delay: 10s;
   cursor: pointer;
